@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>三宮北野ごはん帖</title>
+<style>
+:root{
+  --bg:#F1F3F1;
+  --surface:#FFFFFF;
+  --surface-alt:#E7EBE7;
+  --ink:#1E2521;
+  --muted:#5B655E;
+  --accent:#D8432E;
+  --accent-ink:#FFFFFF;
+  --chain:#2B6E63;
+  --gold:#B9860B;
+  --border:#D9DED8;
+  --warn-bg:#FBE8D9;
+  --warn-ink:#8A4B12;
+  color-scheme: light dark;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#14181A;
+    --surface:#1C2222;
+    --surface-alt:#252C2C;
+    --ink:#ECF0EC;
+    --muted:#9DA6A0;
+    --accent:#FF7A5C;
+    --accent-ink:#1A1210;
+    --chain:#5FC7B4;
+    --gold:#F0C15E;
+    --border:#333C3B;
+    --warn-bg:#3A2A17;
+    --warn-ink:#F0C79A;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#14181A;
+  --surface:#1C2222;
+  --surface-alt:#252C2C;
+  --ink:#ECF0EC;
+  --muted:#9DA6A0;
+  --accent:#FF7A5C;
+  --accent-ink:#1A1210;
+  --chain:#5FC7B4;
+  --gold:#F0C15E;
+  --border:#333C3B;
+  --warn-bg:#3A2A17;
+  --warn-ink:#F0C79A;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@500;700;900&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap');
+
+*{box-sizing:border-box;}
+html,body{height:100%;}
+body{
+  background:var(--bg);
+  color:var(--ink);
+  font-family:"Zen Kaku Gothic New","Hiragino Kaku Gothic ProN","Meiryo",sans-serif;
+  margin:0;
+  padding-inline:16px;
+  padding-block:calc(12px + env(safe-area-inset-top,0px)) calc(12px + env(safe-area-inset-bottom,0px));
+  -webkit-tap-highlight-color:transparent;
+}
+h1,h2,.display{
+  font-family:"Zen Maru Gothic","Zen Kaku Gothic New",sans-serif;
+}
+img{max-width:100%;}
+[hidden]{display:none!important;}
+
+.wrap{max-width:640px;margin:0 auto;}
+
+header.top{
+  position:sticky;
+  top:env(safe-area-inset-top,0px);
+  background:var(--bg);
+  padding-block:10px 8px;
+  z-index:10;
+  border-bottom:1px solid var(--border);
+  margin-bottom:14px;
+}
+.titlebar{
+  display:flex;
+  align-items:baseline;
+  gap:8px;
+  flex-wrap:wrap;
+}
+.titlebar h1{
+  font-size:22px;
+  font-weight:900;
+  margin:0;
+  letter-spacing:.02em;
+}
+.titlebar .sub{
+  font-size:12px;
+  color:var(--muted);
+}
+.intro{
+  font-size:12.5px;
+  color:var(--muted);
+  margin-top:6px;
+  line-height:1.6;
+}
+.intro b{color:var(--ink);}
+
+.search{
+  margin-top:10px;
+  position:relative;
+}
+.search input{
+  width:100%;
+  padding:10px 14px;
+  border-radius:999px;
+  border:1px solid var(--border);
+  background:var(--surface);
+  color:var(--ink);
+  font-size:14px;
+  font-family:inherit;
+}
+.search input:focus{
+  outline:2px solid var(--accent);
+  outline-offset:1px;
+}
+.search input::placeholder{color:var(--muted);}
+
+.filters{margin-top:10px;display:flex;flex-direction:column;gap:8px;}
+.chiprow{
+  display:flex;
+  gap:6px;
+  overflow-x:auto;
+  padding-bottom:2px;
+  scrollbar-width:none;
+}
+.chiprow::-webkit-scrollbar{display:none;}
+.chip{
+  flex:0 0 auto;
+  padding:6px 13px;
+  border-radius:999px;
+  border:1px solid var(--border);
+  background:var(--surface);
+  color:var(--muted);
+  font-size:12.5px;
+  font-weight:500;
+  cursor:pointer;
+  white-space:nowrap;
+  font-family:inherit;
+}
+.chip[aria-pressed="true"]{
+  background:var(--ink);
+  color:var(--bg);
+  border-color:var(--ink);
+}
+.chiprow.type .chip[aria-pressed="true"][data-val="individual"]{background:var(--accent);border-color:var(--accent);color:var(--accent-ink);}
+.chiprow.type .chip[aria-pressed="true"][data-val="chain"]{background:var(--chain);border-color:var(--chain);color:#fff;}
+
+.count{
+  font-size:12px;
+  color:var(--muted);
+  margin:12px 2px 8px;
+}
+
+.list{display:flex;flex-direction:column;gap:10px;}
+
+details.card{
+  background:var(--surface);
+  border:1px solid var(--border);
+  border-radius:14px;
+  overflow:hidden;
+}
+details.card[hidden]{display:none!important;}
+details.card summary{
+  list-style:none;
+  cursor:pointer;
+  padding:12px 14px;
+  display:flex;
+  flex-direction:column;
+  gap:6px;
+}
+details.card summary::-webkit-details-marker{display:none;}
+.s-top{display:flex;justify-content:space-between;align-items:flex-start;gap:8px;}
+.s-name{font-family:"Zen Maru Gothic";font-weight:700;font-size:16px;line-height:1.35;}
+.chev{
+  flex:0 0 auto;
+  width:22px;height:22px;
+  color:var(--muted);
+  transition:transform .18s ease;
+  margin-top:2px;
+}
+details[open] .chev{transform:rotate(180deg);}
+
+.badges{display:flex;flex-wrap:wrap;gap:5px;}
+.badge{
+  font-size:10.5px;
+  font-weight:700;
+  padding:2.5px 8px;
+  border-radius:999px;
+  letter-spacing:.02em;
+}
+.badge.type-individual{background:color-mix(in srgb, var(--accent) 16%, var(--surface));color:var(--accent);}
+.badge.type-chain{background:color-mix(in srgb, var(--chain) 16%, var(--surface));color:var(--chain);}
+.badge.area{background:var(--surface-alt);color:var(--muted);}
+.badge.genre{background:var(--surface-alt);color:var(--ink);}
+.badge.warn{background:var(--warn-bg);color:var(--warn-ink);}
+
+.s-meta{font-size:12.5px;color:var(--muted);display:flex;gap:10px;flex-wrap:wrap;}
+.s-meta .price{color:var(--gold);font-weight:700;font-variant-numeric:tabular-nums;}
+
+.card-body{
+  padding:0 14px 16px;
+  border-top:1px dashed var(--border);
+  margin-top:2px;
+  padding-top:12px;
+  display:flex;
+  flex-direction:column;
+  gap:10px;
+}
+.row{display:flex;gap:8px;font-size:13px;line-height:1.6;}
+.row .label{flex:0 0 68px;color:var(--muted);font-weight:500;}
+.row .val{flex:1;}
+.memo{
+  font-size:13px;
+  line-height:1.65;
+  background:var(--surface-alt);
+  border-radius:10px;
+  padding:9px 11px;
+}
+.warnbox{
+  font-size:12.5px;
+  background:var(--warn-bg);
+  color:var(--warn-ink);
+  border-radius:10px;
+  padding:9px 11px;
+  line-height:1.6;
+}
+
+.btnrow{display:flex;gap:8px;margin-top:2px;}
+.btn{
+  flex:1;
+  text-align:center;
+  padding:10px 8px;
+  border-radius:10px;
+  font-size:13px;
+  font-weight:700;
+  text-decoration:none;
+  border:1px solid var(--border);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:6px;
+}
+.btn.maps{background:var(--ink);color:var(--bg);border-color:var(--ink);}
+.btn.tabelog{background:var(--surface);color:var(--ink);}
+.btn.disabled{opacity:.45;pointer-events:none;}
+.btn svg{width:15px;height:15px;flex:0 0 auto;}
+
+.empty{
+  text-align:center;
+  color:var(--muted);
+  font-size:13px;
+  padding:40px 10px;
+}
+
+footer{
+  margin-top:22px;
+  padding-bottom:18px;
+  font-size:11.5px;
+  color:var(--muted);
+  line-height:1.7;
+  border-top:1px solid var(--border);
+  padding-top:14px;
+}
+</style>
+</head>
+<body>
+
+<div class="wrap">
+  <header class="top">
+    <div class="titlebar">
+      <h1>三宮北野ごはん帖</h1>
+      <span class="sub">神戸電子専門学校まわりのごはん処</span>
+    </div>
+    <p class="intro">学校（<b>北野</b>）から <b>三宮駅</b> 徒歩10分・<b>新神戸駅</b> 徒歩10〜13分・<b>元町駅</b> 徒歩15〜20分。この4エリアのお店をたたき台として集めてます。</p>
+    <div class="search">
+      <input id="search" type="search" placeholder="店名やジャンルで検索" />
+    </div>
+    <div class="filters">
+      <div class="chiprow type" id="typeChips"></div>
+      <div class="chiprow" id="areaChips"></div>
+      <div class="chiprow" id="genreChips"></div>
+    </div>
+  </header>
+
+  <p class="count" id="count"></p>
+  <div class="list" id="list"></div>
+  <p class="empty" id="empty" hidden>条件に合うお店が見つからなかったよ。フィルターを変えてみてね。</p>
+
+  <footer>
+    2026年9月時点でクロがWeb検索して集めたたたき台データだよ。営業時間・定休日・休業状況はお店側の都合で変わることがあるので、行く前に公式情報や食べログで最新状況を確認してね。お店の追加・修正はクロにいつでも言ってね。
+  </footer>
+</div>
+
+<script>
+(function(){
+  var MAPS_ICON = '<svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 22s7-7.58 7-13a7 7 0 1 0-14 0c0 5.42 7 13 7 13Z" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="9" r="2.5" stroke="currentColor" stroke-width="1.8"/></svg>';
+  var TABELOG_ICON = '<svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4 4h16v13l-4 3-4-3-4 3-4-3V4Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M8 9h8M8 13h5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>';
+
+  var AREA_LABEL = {kitano:'北野', sannomiya:'三宮', motomachi:'元町・南京町', shinkobe:'新神戸'};
+
+  var stores = [
+    {name:"北野坂 奥", genre:"ラーメン・つけ麺", category:"ラーメン", type:"individual",
+     area:"kitano", location:"中山手通・北野坂地下／三宮駅から徒歩5〜10分",
+     price:"1000〜2000円", hours:"月〜木 11:30-15:00/17:00-23:00、金土 11:30-15:00/17:00-24:00、日 11:30-22:00（年始以外無休）",
+     memo:"もつつけ麺・チーズつけ麺が名物の人気店。", tabelog:"https://tabelog.com/hyogo/A2801/A280101/28027351/", mapsQuery:"北野坂 奥 神戸市中央区"},
+
+    {name:"神戸にしむら珈琲店 中山手本店", genre:"喫茶店", category:"カフェ", type:"individual",
+     area:"kitano", location:"中山手通1丁目／三宮・北野坂から徒歩5〜10分",
+     price:"500〜1500円", hours:"8:30〜22:00（2026年6月改定）／毎月最終月曜定休",
+     memo:"1948年創業、神戸の老舗喫茶。モーニング・トーストが人気。", tabelog:"https://tabelog.com/hyogo/A2801/A280101/28000176/", mapsQuery:"神戸にしむら珈琲店 中山手本店 神戸市中央区"},
+
+    {name:"TRITON CAFE", genre:"カフェ・洋食", category:"カフェ", type:"individual",
+     area:"kitano", location:"北野坂／三宮駅から坂を上って徒歩5分",
+     price:"1000〜2000円", hours:"情報源により差異あり（例：11:30〜19時台）／不定休、詳細は公式サイト要確認",
+     memo:"パンケーキ・デザートが人気の北野の名物カフェ。", tabelog:"https://tabelog.com/hyogo/A2801/A280101/28000714/", mapsQuery:"TRITON CAFE 神戸北野"},
+
+    {name:"カフェ フロインドリーブ 本店", genre:"カフェ・ベーカリー", category:"カフェ", type:"individual",
+     area:"kitano", location:"北野町（新神戸・北野エリア）",
+     price:"1000〜2000円", hours:"1Fパン屋・2Fカフェとも10:00〜18:00（カフェL.O.17:30）、モーニング10:00-11:30・ランチ11:30-14:00（平日のみ）／水曜定休（祝日は翌日）",
+     memo:"大正13年創業、教会建築をリノベしたカフェ。焼き立てパンが名物。", tabelog:"https://tabelog.com/hyogo/A2801/A280101/28000366/", mapsQuery:"カフェ フロインドリーブ本店 神戸市中央区北野町"},
+
+    {name:"スターバックスコーヒー 神戸北野異人館店", genre:"カフェ", category:"カフェ", type:"chain",
+     area:"kitano", location:"北野町3-1-31 北野物語館／三宮駅から徒歩約10〜13分・新神戸駅からも徒歩13分程度",
+     price:"500〜1000円", hours:"8:00〜22:00／不定休",
+     memo:"登録有形文化財の異人館を利用した観光名所的な店舗。", tabelog:"https://tabelog.com/hyogo/A2801/A280101/28015297/", mapsQuery:"スターバックスコーヒー 神戸北野異人館店 神戸市中央区北野町"},
+
+    {name:"まるお食堂", genre:"定食・とんかつ", category:"定食・食堂", type:"individual",
+     area:"sannomiya", location:"三宮町1-8-1 さんプラザB1F／旧居留地・大丸前駅から徒歩2分",
+     price:"〜1000円程度", hours:"12:00〜15:00（詳細は変動あり、要確認）",
+     memo:"激安のとんかつ・かつ丼が人気の地下食堂。", tabelog:"https://tabelog.com/hyogo/A2801/A280101/28054783/", mapsQuery:"まるお食堂 三宮町 神戸市中央区"},
+
+    {name:"家庭料理 なおさん", genre:"洋食・定食", category:"定食・食堂", type:"individual",
+     area:"sannomiya", location:"琴ノ緒町5-4-23／JR三ノ宮駅東口から徒歩1分",
+     price:"昼・夜とも〜1999円", hours:"火〜日 11:00-15:00(L.O.14:30)、土日は17:30-19:00(L.O.)も営業／月曜定休",
+     memo:"2022年開業。日替わりランチ980円、家庭的な洋食・定食。", tabelog:"https://tabelog.com/hyogo/A2801/A280101/28063860/", mapsQuery:"家庭料理 なおさん 神戸市中央区琴ノ緒町"},
+
+    {name:"鴻華園", genre:"中華・エスニック", category:"中華", type:"individual",
+     area:"sannomiya", location:"下山手通・トアロード周辺／三宮駅周辺",
+     price:"不明", hours:"月水木金 ランチ11:30-14:00(L.O.13:30)/ディナー17:00-21:30(L.O.20:30)、土日祝ランチ11:30-14:30(L.O.13:30)／定休日不明",
+     memo:"リーズナブルな中華・エスニック料理。ランチが人気。", tabelog:"https://tabelog.com/hyogo/A2801/A280101/28000719/", mapsQuery:"鴻華園 トアロード 神戸市中央区"},
+
+    {name:"CoCo壱番屋 JR三ノ宮駅東口店", genre:"カレー", category:"カレー", type:"chain",
+     area:"sannomiya", location:"雲井通6-1-15／JR三ノ宮駅から徒歩2分",
+     price:"600〜1500円程度（ポークカレー588円〜、トッピングで加算）", hours:"不明（店舗個別の営業時間は未確認）",
+     memo:"辛さ・ご飯量・トッピングを自由に選べる全国チェーン。", tabelog:"https://tabelog.com/hyogo/A2801/A280101/28018433/", mapsQuery:"CoCo壱番屋 JR三ノ宮駅東口店 神戸市中央区"},
+
+    {name:"松屋 三宮東店", genre:"牛丼・定食", category:"丼もの", type:"chain",
+     area:"sannomiya", location:"雲井通5丁目2-18",
+     price:"500〜1000円程度", hours:"24時間営業",
+     memo:"深夜も使える牛めし・定食チェーン。", tabelog:null, mapsQuery:"松屋 三宮東店 神戸市中央区"},
+
+    {name:"餃子の王将 三宮下山手通り店", genre:"中華（餃子）", category:"中華", type:"chain",
+     area:"sannomiya", location:"下山手通2-11-1",
+     price:"500〜1500円程度（天津飯620〜750円ほか）", hours:"月〜土 11:00-23:30(L.O.23:00)、日 11:00-22:30(L.O.22:00)／定休日不明",
+     memo:"餃子・炒飯・天津飯など定番中華が揃う全国チェーン。", tabelog:"https://tabelog.com/hyogo/A2801/A280101/28013413/", mapsQuery:"餃子の王将 三宮下山手通り店 神戸市中央区"},
+
+    {name:"サイゼリヤ 三宮センター街店", genre:"イタリアン", category:"イタリアン", type:"chain",
+     area:"sannomiya", location:"三宮町2-10-7 グレースコウベB1F",
+     price:"500〜1500円程度", hours:"10:00〜22:00／定休日不明",
+     memo:"ドリンクバー・パスタが安く食べられる全国チェーン。", tabelog:"https://tabelog.com/hyogo/A2801/A280101/28033546/", mapsQuery:"サイゼリヤ 三宮センター街店 神戸市中央区"},
+
+    {name:"丸亀製麺 三宮店", genre:"うどん", category:"うどん", type:"chain",
+     area:"sannomiya", location:"磯上通2-1-9",
+     price:"400〜1000円程度（かけうどん並440円〜）", hours:"10:00〜22:00(L.O.21:30)／定休日不明",
+     memo:"揚げたて天ぷらが選べる讃岐うどんの全国チェーン。", tabelog:"https://tabelog.com/hyogo/A2801/A280102/28021769/", mapsQuery:"丸亀製麺 三宮店 神戸市中央区"},
+
+    {name:"すき家 三宮駅東店", genre:"牛丼", category:"丼もの", type:"chain",
+     area:"sannomiya", location:"雲井通6-1-15 サンシティビル103／三宮駅東口2から徒歩1分",
+     price:"500〜1000円程度", hours:"24時間営業",
+     memo:"深夜・早朝も使える牛丼チェーン。", tabelog:"https://tabelog.com/hyogo/A2801/A280101/28028638/", mapsQuery:"すき家 三宮駅東店 神戸市中央区"},
+
+    {name:"DONQ 三宮本店", genre:"パン・ベーカリーカフェ", category:"カフェ", type:"chain",
+     area:"sannomiya", location:"三宮町2-9-6／元町駅から徒歩5分程度",
+     price:"パン単品〜500円、カフェ利用1000〜2000円", hours:"不明（本店の詳細営業時間は未確認）",
+     memo:"神戸発祥のベーカリーチェーンの本店。クリームパンが人気。", tabelog:"https://tabelog.com/hyogo/A2801/A280102/28070139/", mapsQuery:"DONQ 三宮本店 神戸市中央区三宮町"},
+
+    {name:"モスバーガー 三ノ宮駅東店", genre:"ハンバーガー", category:"ハンバーガー", type:"chain",
+     area:"sannomiya", location:"雲井通4-2-14",
+     price:"500〜1000円程度", hours:"9:30〜21:00（平日・土日祝共通、2025年9月改定）／水曜定休",
+     memo:"全国チェーンのハンバーガー店。", tabelog:"https://tabelog.com/hyogo/A2801/A280101/28069626/", mapsQuery:"モスバーガー 三ノ宮駅東店 神戸市中央区"},
+
+    {name:"猪八戒", genre:"中華（点心・飲茶）", category:"中華", type:"individual",
+     area:"motomachi", location:"元町通2-1-12／元町駅から徒歩3分（南京町広場前）",
+     price:"ランチ1000〜1999円、ディナー2000〜2999円", hours:"不明",
+     memo:"点心・飲茶のオーダーバイキング（90分制）が名物。", tabelog:"https://tabelog.com/hyogo/A2801/A280102/28051282/", mapsQuery:"猪八戒 南京町 神戸市中央区"},
+
+    {name:"豊味園 元町店", genre:"中華料理", category:"中華", type:"individual",
+     area:"motomachi", location:"JR元町駅から徒歩1分",
+     price:"ランチ〜999円、ディナー1000〜1999円", hours:"月〜金 17:00〜24:00(L.O.23:30)、土日祝 11:30-15:00(L.O.14:50)/17:00-24:00(L.O.23:30)／不定休",
+     memo:"麻婆豆腐定食770円など、安さが人気。", tabelog:"https://tabelog.com/hyogo/A2801/A280102/28068676/", mapsQuery:"豊味園 元町店 神戸市中央区"},
+
+    {name:"元祖ぎょうざ苑", genre:"餃子・中華", category:"中華", type:"individual",
+     area:"motomachi", location:"南京町（元町エリア）",
+     price:"不明", hours:"11:45-15:00(L.O.)、17:00-20:30(L.O.)、21:30閉店／月曜定休（祝日は営業、翌日休）",
+     memo:"昭和26年創業、神戸餃子・味噌だれ発祥の老舗。", tabelog:"https://tabelog.com/hyogo/A2801/A280102/28000849/", mapsQuery:"元祖ぎょうざ苑 南京町 神戸市中央区"},
+
+    {name:"三宮一貫楼 本店", genre:"中華・餃子", category:"中華", type:"individual",
+     area:"motomachi", location:"三宮町3-9-9／JR・阪神元町駅から徒歩2分",
+     price:"不明", hours:"テイクアウトのみ：火〜日 10:30-21:00、月 10:30-18:00／木曜定休",
+     memo:"神戸の老舗餃子店。", tabelog:"https://tabelog.com/hyogo/A2801/A280102/28001593/", mapsQuery:"三宮一貫楼 本店 神戸市中央区三宮町",
+     warn:"⚠️ 2025年3月28日から施設修繕のためレストラン部分は休業中（テイクアウトのみ営業という情報あり）。最新の営業再開状況は要確認。"},
+
+    {name:"天下一品 神戸・元町店", genre:"ラーメン", category:"ラーメン", type:"chain",
+     area:"motomachi", location:"元町通1-14-9",
+     price:"900〜1900円程度（ラーメン920円〜、定食は1200円前後）", hours:"11:30〜23:00（日曜以外の祝日は〜21:00）／日曜定休",
+     memo:"「こってり」スープで有名な全国チェーン。学生にも人気。", tabelog:"https://tabelog.com/hyogo/A2801/A280102/28007254/", mapsQuery:"天下一品 神戸元町店 神戸市中央区"},
+
+    {name:"自由亭", genre:"洋食", category:"洋食", type:"individual",
+     area:"shinkobe", location:"新神戸駅構内／新幹線口徒歩1分・地下鉄口徒歩2分",
+     price:"不明", hours:"10:00〜20:30",
+     memo:"駅構内の老舗洋食店。ナポリタン・オムライス・カツカレーが名物。", tabelog:"https://tabelog.com/hyogo/A2801/A280103/28009170/", mapsQuery:"自由亭 新神戸駅 神戸市中央区"}
+  ];
+
+  var state = {type:'all', area:'all', genre:'all', q:''};
+
+  function uniq(arr){return arr.filter(function(v,i){return arr.indexOf(v)===i;});}
+
+  function buildChips(container, options, key){
+    container.innerHTML = '';
+    options.forEach(function(opt){
+      var b = document.createElement('button');
+      b.className = 'chip';
+      b.type = 'button';
+      b.textContent = opt.label;
+      b.dataset.val = opt.value;
+      b.setAttribute('aria-pressed', state[key] === opt.value ? 'true' : 'false');
+      b.addEventListener('click', function(){
+        state[key] = opt.value;
+        Array.prototype.forEach.call(container.querySelectorAll('.chip'), function(c){
+          c.setAttribute('aria-pressed', c.dataset.val === opt.value ? 'true' : 'false');
+        });
+        render();
+      });
+      container.appendChild(b);
+    });
+  }
+
+  function escapeHtml(s){
+    return String(s).replace(/[&<>"']/g, function(c){
+      return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c];
+    });
+  }
+
+  function card(s){
+    var el = document.createElement('details');
+    el.className = 'card';
+
+    var typeLabel = s.type === 'chain' ? 'チェーン店' : '個人店';
+    var badges = '<span class="badge type-'+s.type+'">'+typeLabel+'</span>'
+      + '<span class="badge area">'+AREA_LABEL[s.area]+'</span>'
+      + '<span class="badge genre">'+escapeHtml(s.genre)+'</span>'
+      + (s.warn ? '<span class="badge warn">要確認</span>' : '');
+
+    var summary = document.createElement('summary');
+    summary.innerHTML =
+      '<div class="s-top">'
+        + '<div class="s-name">'+escapeHtml(s.name)+'</div>'
+        + '<svg class="chev" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>'
+      + '</div>'
+      + '<div class="badges">'+badges+'</div>'
+      + '<div class="s-meta"><span class="price">'+escapeHtml(s.price)+'</span><span>'+escapeHtml(s.location)+'</span></div>';
+    el.appendChild(summary);
+
+    var body = document.createElement('div');
+    body.className = 'card-body';
+
+    var rows =
+      '<div class="row"><span class="label">営業時間</span><span class="val">'+escapeHtml(s.hours)+'</span></div>';
+
+    body.innerHTML = rows
+      + (s.memo ? '<div class="memo">'+escapeHtml(s.memo)+'</div>' : '')
+      + (s.warn ? '<div class="warnbox">'+escapeHtml(s.warn)+'</div>' : '');
+
+    var btnrow = document.createElement('div');
+    btnrow.className = 'btnrow';
+
+    var mapsBtn = document.createElement('a');
+    mapsBtn.className = 'btn maps';
+    mapsBtn.href = 'https://www.google.com/maps/search/?api=1&query=' + encodeURIComponent(s.mapsQuery);
+    mapsBtn.target = '_blank';
+    mapsBtn.rel = 'noopener';
+    mapsBtn.innerHTML = MAPS_ICON + 'Googleマップ';
+    btnrow.appendChild(mapsBtn);
+
+    var tabeBtn = document.createElement('a');
+    if (s.tabelog){
+      tabeBtn.className = 'btn tabelog';
+      tabeBtn.href = s.tabelog;
+      tabeBtn.target = '_blank';
+      tabeBtn.rel = 'noopener';
+      tabeBtn.innerHTML = TABELOG_ICON + '食べログ';
+    } else {
+      tabeBtn.className = 'btn tabelog disabled';
+      tabeBtn.innerHTML = TABELOG_ICON + '情報なし';
+    }
+    btnrow.appendChild(tabeBtn);
+
+    body.appendChild(btnrow);
+    el.appendChild(body);
+    return el;
+  }
+
+  var listEl = document.getElementById('list');
+  var countEl = document.getElementById('count');
+  var emptyEl = document.getElementById('empty');
+
+  function matches(s){
+    if (state.type !== 'all' && s.type !== state.type) return false;
+    if (state.area !== 'all' && s.area !== state.area) return false;
+    if (state.genre !== 'all' && s.category !== state.genre) return false;
+    if (state.q){
+      var hay = (s.name + ' ' + s.genre + ' ' + s.category).toLowerCase();
+      if (hay.indexOf(state.q.toLowerCase()) === -1) return false;
+    }
+    return true;
+  }
+
+  function render(){
+    listEl.innerHTML = '';
+    var shown = 0;
+    stores.forEach(function(s){
+      if (matches(s)){
+        listEl.appendChild(card(s));
+        shown++;
+      }
+    });
+    countEl.textContent = shown + '件のお店';
+    emptyEl.hidden = shown !== 0;
+  }
+
+  buildChips(document.getElementById('typeChips'), [
+    {label:'全部', value:'all'},
+    {label:'チェーン店', value:'chain'},
+    {label:'個人店', value:'individual'}
+  ], 'type');
+
+  buildChips(document.getElementById('areaChips'), [
+    {label:'すべてのエリア', value:'all'},
+    {label:'北野（学校周辺）', value:'kitano'},
+    {label:'三宮', value:'sannomiya'},
+    {label:'元町・南京町', value:'motomachi'},
+    {label:'新神戸', value:'shinkobe'}
+  ], 'area');
+
+  var genreOptions = [{label:'すべてのジャンル', value:'all'}].concat(
+    uniq(stores.map(function(s){return s.category;})).map(function(c){return {label:c, value:c};})
+  );
+  buildChips(document.getElementById('genreChips'), genreOptions, 'genre');
+
+  document.getElementById('search').addEventListener('input', function(e){
+    state.q = e.target.value;
+    render();
+  });
+
+  render();
+})();
+</script>
+</body>
+</html>
