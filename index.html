@@ -288,7 +288,7 @@ footer{
       <h1>三宮北野ごはん帖</h1>
       <span class="sub">神戸電子専門学校まわりのごはん処</span>
     </div>
-    <p class="intro">学校（<b>北野</b>）から <b>三宮駅</b> 徒歩10分・<b>新神戸駅</b> 徒歩10〜13分・<b>元町駅</b> 徒歩15〜20分。この4エリアのお店をたたき台として集めてます。</p>
+    <p class="intro">学校（<b>北野</b>）から <b>三宮駅</b> 徒歩10分・<b>新神戸駅</b> 徒歩10〜13分・<b>元町駅</b> 徒歩15〜20分。<b>神戸駅・ハーバーランド</b>も少し足を延ばせば行けるエリアとして収録してます。</p>
     <div class="search">
       <input id="search" type="search" placeholder="店名やジャンルで検索" />
     </div>
@@ -314,7 +314,7 @@ footer{
   var MAPS_ICON = '<svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 22s7-7.58 7-13a7 7 0 1 0-14 0c0 5.42 7 13 7 13Z" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="9" r="2.5" stroke="currentColor" stroke-width="1.8"/></svg>';
   var TABELOG_ICON = '<svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4 4h16v13l-4 3-4-3-4 3-4-3V4Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M8 9h8M8 13h5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>';
 
-  var AREA_LABEL = {kitano:'北野', sannomiya:'三宮', motomachi:'元町・南京町', shinkobe:'新神戸'};
+  var AREA_LABEL = {kitano:'北野', sannomiya:'三宮', motomachi:'元町・南京町', shinkobe:'新神戸', kobe:'神戸駅・ハーバーランド'};
 
   var stores = [];
   var state = {type:'all', area:'all', genre:'all', q:''};
@@ -446,7 +446,8 @@ footer{
       {label:'北野（学校周辺）', value:'kitano'},
       {label:'三宮', value:'sannomiya'},
       {label:'元町・南京町', value:'motomachi'},
-      {label:'新神戸', value:'shinkobe'}
+      {label:'新神戸', value:'shinkobe'},
+      {label:'神戸駅・ハーバーランド', value:'kobe'}
     ], 'area');
 
     var genreOptions = [{label:'すべてのジャンル', value:'all'}].concat(
