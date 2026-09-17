@@ -559,5 +559,19 @@
     "tabelog": "https://tabelog.com/hyogo/A2801/A280102/28048408/",
     "mapsQuery": "https://maps.app.goo.gl/6AeFcP98wPVyxQ9j8",
     "warn": "支払い方法 カード、QRコード決済、電子マネー不可"
+  },
+  {
+    "name": "オールドスパゲッティ",
+    "type": "chain",
+    "area": "kobe",
+    "category": "イタリアン",
+    "genre": "パスタ、ピザ",
+    "location": "JR神戸駅から海側に向って　ハーバーランド方向へ　ライオンズマンション裏手　レンガ倉庫内",
+    "price": "1000円~2000円",
+    "hours": "月・火・水・木・金・祝前日・祝後日\n11:00 - 15:00 L.O. 14:30   17:00 - 21:00 L.O. 20:30\n土・日・祝日\n11:00 - 22:00 L.O. 21:00",
+    "memo": "歴史ある煉瓦倉庫のレトロな空間で、豊富な種類のパスタやピザを楽しめるお店。",
+    "tabelog": "https://tabelog.com/hyogo/A2801/A280102/28000597/",
+    "mapsQuery": "オールド･スパゲティ･ファクトリー 神戸店",
+    "warn": "支払い方法 カード可  （VISA、Master、JCB、AMEX）、電子マネー不可、QRコード決済可  （PayPay）"
   }
 ]
