@@ -57,7 +57,7 @@ section h2{font-size:14px;margin:0;font-weight:700;}
 .note ol{margin:6px 0 0;padding-left:18px;display:flex;flex-direction:column;gap:3px;}
 
 label{font-size:12.5px;font-weight:500;color:var(--muted);display:flex;flex-direction:column;gap:4px;}
-input[type=text], input[type=password], input[type=url], textarea, select{
+input[type=text], input[type=search], input[type=password], input[type=url], textarea, select{
   font-family:inherit; font-size:14px; color:var(--ink); background:var(--surface-alt);
   border:1px solid var(--border); border-radius:8px; padding:8px 10px; width:100%;
 }
@@ -93,6 +93,7 @@ textarea{min-height:56px; resize:vertical;}
 .storeitem .name{font-weight:700;}
 .storeitem .meta{font-size:11px; color:var(--muted);}
 .storeitem .actions{display:flex; gap:6px; flex:0 0 auto;}
+.listempty{font-size:12.5px;color:var(--muted);text-align:center;padding:14px 0;}
 </style>
 </head>
 <body>
@@ -186,7 +187,9 @@ textarea{min-height:56px; resize:vertical;}
 
   <section id="listSection" hidden>
     <h2>③ 登録済みのお店（<span id="listCount">0</span>件）</h2>
+    <input type="search" id="listSearch" placeholder="店名・ジャンルで検索（追加前に「もうあるか」確認できるよ）" />
     <div id="storeList"></div>
+    <p class="listempty" id="listEmpty" hidden>見つからなかったよ。まだ登録されてないお店かも。</p>
   </section>
 </div>
 
@@ -205,6 +208,8 @@ textarea{min-height:56px; resize:vertical;}
   var listSection = document.getElementById('listSection');
   var storeListEl = document.getElementById('storeList');
   var listCountEl = document.getElementById('listCount');
+  var listEmptyEl = document.getElementById('listEmpty');
+  var listSearchEl = document.getElementById('listSearch');
   var formTitle = document.getElementById('formTitle');
   var submitBtn = document.getElementById('submitBtn');
   var cancelEditBtn = document.getElementById('cancelEditBtn');
@@ -212,6 +217,7 @@ textarea{min-height:56px; resize:vertical;}
   var currentStores = [];
   var currentSha = null;
   var editingIndex = -1;
+  var listSearchTerm = '';
 
   function getToken(){
     try { return localStorage.getItem('ghToken') || ''; } catch(e){ return ''; }
@@ -317,10 +323,19 @@ textarea{min-height:56px; resize:vertical;}
 
   var AREA_LABEL = {kitano:'北野', sannomiya:'三宮', motomachi:'元町・南京町', shinkobe:'新神戸', kobe:'神戸駅・ハーバーランド'};
 
+  function matchesSearch(s, term){
+    if (!term) return true;
+    var hay = (s.name + ' ' + (s.genre||'') + ' ' + (s.category||'')).toLowerCase();
+    return hay.indexOf(term.toLowerCase()) > -1;
+  }
+
   function renderList(){
     storeListEl.innerHTML = '';
-    listCountEl.textContent = currentStores.length;
+    var term = listSearchTerm;
+    var shown = 0;
     currentStores.forEach(function(s, idx){
+      if (!matchesSearch(s, term)) return;
+      shown++;
       var row = document.createElement('div');
       row.className = 'storeitem';
       var typeLabel = s.type === 'chain' ? 'チェーン店' : '個人店';
@@ -333,7 +348,14 @@ textarea{min-height:56px; resize:vertical;}
       row.querySelector('.name').textContent = s.name;
       storeListEl.appendChild(row);
     });
+    listCountEl.textContent = term ? (shown + ' / ' + currentStores.length) : currentStores.length;
+    listEmptyEl.hidden = shown !== 0;
   }
+
+  listSearchEl.addEventListener('input', function(e){
+    listSearchTerm = e.target.value;
+    renderList();
+  });
 
   function escHtml(s){
     return String(s).replace(/[&<>"']/g, function(c){
