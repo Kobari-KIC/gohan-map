@@ -127,6 +127,26 @@ header.top{
 .search input::placeholder{color:var(--muted);}
 
 .filters{margin-top:10px;display:flex;flex-direction:column;gap:8px;}
+.chiprow-wrap{display:flex;align-items:center;gap:4px;}
+.chiprow-wrap .chiprow{flex:1;min-width:0;}
+.scrollbtn{
+  flex:0 0 auto;
+  width:24px;
+  height:24px;
+  border-radius:50%;
+  border:1px solid var(--border);
+  background:var(--surface);
+  color:var(--muted);
+  font-size:14px;
+  line-height:1;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  cursor:pointer;
+  font-family:inherit;
+  padding:0;
+}
+.scrollbtn:hover{background:var(--surface-alt);color:var(--ink);}
 .chiprow{
   display:flex;
   gap:6px;
@@ -296,8 +316,16 @@ footer{
     </div>
     <div class="filters">
       <div class="chiprow type" id="typeChips"></div>
-      <div class="chiprow" id="areaChips"></div>
-      <div class="chiprow" id="genreChips"></div>
+      <div class="chiprow-wrap">
+        <button type="button" class="scrollbtn" data-dir="-1" data-target="areaChips" aria-label="エリアを左へ">‹</button>
+        <div class="chiprow" id="areaChips"></div>
+        <button type="button" class="scrollbtn" data-dir="1" data-target="areaChips" aria-label="エリアを右へ">›</button>
+      </div>
+      <div class="chiprow-wrap">
+        <button type="button" class="scrollbtn" data-dir="-1" data-target="genreChips" aria-label="ジャンルを左へ">‹</button>
+        <div class="chiprow" id="genreChips"></div>
+        <button type="button" class="scrollbtn" data-dir="1" data-target="genreChips" aria-label="ジャンルを右へ">›</button>
+      </div>
     </div>
   </header>
 
@@ -498,6 +526,14 @@ footer{
     buildChips(genreChipsEl, genreOptions, 'genre');
 
     [typeChipsEl, areaChipsEl, genreChipsEl].forEach(enableWheelAndDragScroll);
+
+    Array.prototype.forEach.call(document.querySelectorAll('.scrollbtn'), function(btn){
+      btn.addEventListener('click', function(){
+        var target = document.getElementById(btn.dataset.target);
+        var dir = parseInt(btn.dataset.dir, 10);
+        if (target) target.scrollBy({left: dir * 180, behavior: 'smooth'});
+      });
+    });
 
     document.getElementById('search').addEventListener('input', function(e){
       state.q = e.target.value;
