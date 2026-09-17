@@ -545,5 +545,19 @@
     "memo": "あっさり系の白湯スープラーメン。",
     "tabelog": null,
     "mapsQuery": "どうとんぼり神座 神戸ハーバーランドumie"
+  },
+  {
+    "name": "洋食の藤",
+    "type": "individual",
+    "area": "kobe",
+    "category": "洋食",
+    "genre": "オムライス・ハンバーグ",
+    "location": "JR神戸駅より徒歩6分",
+    "price": "1000円~2000円",
+    "hours": "月・水・木・金・土は11:00 - 14:30 L.O. 14:00 17:30 - 21:00 L.O. 20:30\n日は11:00 - 14:30 L.O. 14:00 17:30 - 21:00 L.O. 20:30",
+    "memo": "神戸らしい昔ながらの洋食を、リーズナブルに楽しめる人気店。",
+    "tabelog": "https://tabelog.com/hyogo/A2801/A280102/28048408/",
+    "mapsQuery": "https://maps.app.goo.gl/6AeFcP98wPVyxQ9j8",
+    "warn": "支払い方法 カード、QRコード決済、電子マネー不可"
   }
 ]
