@@ -133,8 +133,10 @@ header.top{
   overflow-x:auto;
   padding-bottom:2px;
   scrollbar-width:none;
+  cursor:grab;
 }
 .chiprow::-webkit-scrollbar{display:none;}
+.chiprow.dragging{cursor:grabbing;user-select:none;}
 .chip{
   flex:0 0 auto;
   padding:6px 13px;
@@ -321,6 +323,43 @@ footer{
 
   function uniq(arr){return arr.filter(function(v,i){return arr.indexOf(v)===i;});}
 
+  function enableWheelAndDragScroll(el){
+    el.addEventListener('wheel', function(e){
+      if (el.scrollWidth <= el.clientWidth) return;
+      if (Math.abs(e.deltaY) > Math.abs(e.deltaX)){
+        el.scrollLeft += e.deltaY;
+        e.preventDefault();
+      }
+    }, {passive:false});
+
+    var isDown = false, startX = 0, startScroll = 0, moved = false;
+    el.addEventListener('mousedown', function(e){
+      isDown = true;
+      moved = false;
+      el.classList.add('dragging');
+      startX = e.pageX;
+      startScroll = el.scrollLeft;
+    });
+    window.addEventListener('mouseup', function(){
+      isDown = false;
+      el.classList.remove('dragging');
+    });
+    el.addEventListener('mouseleave', function(){
+      isDown = false;
+      el.classList.remove('dragging');
+    });
+    el.addEventListener('mousemove', function(e){
+      if (!isDown) return;
+      var dx = e.pageX - startX;
+      if (Math.abs(dx) > 3) moved = true;
+      el.scrollLeft = startScroll - dx;
+      e.preventDefault();
+    });
+    el.addEventListener('click', function(e){
+      if (moved){ e.preventDefault(); e.stopPropagation(); moved = false; }
+    }, true);
+  }
+
   function buildChips(container, options, key){
     container.innerHTML = '';
     options.forEach(function(opt){
@@ -435,13 +474,17 @@ footer{
   }
 
   function setupFilters(){
-    buildChips(document.getElementById('typeChips'), [
+    var typeChipsEl = document.getElementById('typeChips');
+    var areaChipsEl = document.getElementById('areaChips');
+    var genreChipsEl = document.getElementById('genreChips');
+
+    buildChips(typeChipsEl, [
       {label:'全部', value:'all'},
       {label:'チェーン店', value:'chain'},
       {label:'個人店', value:'individual'}
     ], 'type');
 
-    buildChips(document.getElementById('areaChips'), [
+    buildChips(areaChipsEl, [
       {label:'すべてのエリア', value:'all'},
       {label:'北野（学校周辺）', value:'kitano'},
       {label:'三宮', value:'sannomiya'},
@@ -453,7 +496,9 @@ footer{
     var genreOptions = [{label:'すべてのジャンル', value:'all'}].concat(
       uniq(stores.map(function(s){return s.category;})).map(function(c){return {label:c, value:c};})
     );
-    buildChips(document.getElementById('genreChips'), genreOptions, 'genre');
+    buildChips(genreChipsEl, genreOptions, 'genre');
+
+    [typeChipsEl, areaChipsEl, genreChipsEl].forEach(enableWheelAndDragScroll);
 
     document.getElementById('search').addEventListener('input', function(e){
       state.q = e.target.value;
