@@ -326,10 +326,9 @@ footer{
   function enableWheelAndDragScroll(el){
     el.addEventListener('wheel', function(e){
       if (el.scrollWidth <= el.clientWidth) return;
-      if (Math.abs(e.deltaY) > Math.abs(e.deltaX)){
-        el.scrollLeft += e.deltaY;
-        e.preventDefault();
-      }
+      var delta = e.deltaY !== 0 ? e.deltaY : e.deltaX;
+      el.scrollLeft += delta;
+      e.preventDefault();
     }, {passive:false});
 
     var isDown = false, startX = 0, startScroll = 0, moved = false;
