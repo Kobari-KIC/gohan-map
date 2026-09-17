@@ -127,17 +127,18 @@ header.top{
 .search input::placeholder{color:var(--muted);}
 
 .filters{margin-top:10px;display:flex;flex-direction:column;gap:8px;}
-.chiprow-wrap{display:flex;align-items:center;gap:4px;}
+.chiprow-wrap{display:flex;align-items:center;gap:6px;}
 .chiprow-wrap .chiprow{flex:1;min-width:0;}
 .scrollbtn{
   flex:0 0 auto;
-  width:24px;
-  height:24px;
+  width:26px;
+  height:26px;
   border-radius:50%;
-  border:1px solid var(--border);
-  background:var(--surface);
-  color:var(--muted);
-  font-size:14px;
+  border:1.5px solid var(--accent);
+  background:var(--accent);
+  color:var(--accent-ink);
+  font-size:15px;
+  font-weight:900;
   line-height:1;
   display:flex;
   align-items:center;
@@ -145,8 +146,10 @@ header.top{
   cursor:pointer;
   font-family:inherit;
   padding:0;
+  box-shadow:0 1px 3px rgba(0,0,0,.25);
 }
-.scrollbtn:hover{background:var(--surface-alt);color:var(--ink);}
+.scrollbtn:hover{filter:brightness(1.1);}
+.scrollbtn:active{filter:brightness(0.95);}
 .chiprow{
   display:flex;
   gap:6px;
