@@ -615,5 +615,19 @@
     "tabelog": "https://tabelog.com/hyogo/A2801/A280101/28060358/",
     "mapsQuery": "燻製kitchen タニグチ",
     "warn": "カード可(VISA、Master、JCB、AMEX、Diners)　電子マネー不可　QRコード決済可(PayPay)"
+  },
+  {
+    "name": "神戸元町ハンバーグウエスト",
+    "type": "individual",
+    "area": "motomachi",
+    "category": "洋食",
+    "genre": "ハンバーグ、カレー",
+    "location": "元町駅（ＪＲ）から2分 元町駅（阪神）から2分",
+    "price": "ランチ 1000円~2000円  ディナー 2000円~3000円",
+    "hours": "営業時間 火・水・木・金・土・日\nランチ 11:00~15:00\nディナー 17:00～21:00\n定休日 月",
+    "memo": "肉の旨みをしっかり味わえるジューシーなハンバーグが人気の、神戸元町の洋食店。",
+    "tabelog": "https://tabelog.com/hyogo/A2801/A280102/28071070/",
+    "mapsQuery": "神戸元町ハンバーグウエスト",
+    "warn": "カード不可、電子マネー不可、QRコード決済可 (PayPay)"
   }
 ]
