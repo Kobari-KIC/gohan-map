@@ -587,5 +587,19 @@
     "tabelog": "https://tabelog.com/hyogo/A2801/A280101/28002224/?gclsrc=aw.ds&&cid=yo_g_kw_shop_st02_hyogo-nml_28002224&gad_source=1&gad_campaignid=20045835829&gbraid=0AAAAADO8PFR3fIDDMMNxWXCrx9MVlhpR4&gclid=Cj0KCQjw8ofWBhCHARIsANBj4LvenX4hvG7iq0LsflH2ovn8b6pFODqQBtdpCtkx30YuklzKOoeYXVkaAoDLEALw_wcB",
     "mapsQuery": "港町MOTHER",
     "warn": "カード可、電子マネー可、QRコード決済可"
+  },
+  {
+    "name": "丸高中華そば 神戸二宮 二宮店",
+    "type": "chain",
+    "area": "kitano",
+    "category": "中華",
+    "genre": "ラーメン",
+    "location": "JR東海道本線「三ノ宮」駅から徒歩7分",
+    "price": "1000円~2000円",
+    "hours": "営業時間\n火・水・木・金・土・日\n11:00~15:00 (L.O 14:30)\n17:00~02:00 (L.O 01:30)\n定休日\n月、第一火曜日夜",
+    "memo": "濃厚な豚骨醤油スープが特徴の、本場の和歌山ラーメンを神戸で楽しめる人気店。",
+    "tabelog": "https://tabelog.com/hyogo/A2801/A280101/28002413/",
+    "mapsQuery": "丸高中華そば 神戸二宮 二宮店",
+    "warn": "カード不可、電子マネー不可、QRコード決済不可"
   }
 ]
