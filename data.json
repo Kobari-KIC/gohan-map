@@ -24,7 +24,8 @@
     "hours": "8:30〜22:00（2026年6月改定）／毎月最終月曜定休",
     "memo": "1948年創業、神戸の老舗喫茶。モーニング・トーストが人気。",
     "tabelog": "https://tabelog.com/hyogo/A2801/A280101/28000176/",
-    "mapsQuery": "神戸にしむら珈琲店 中山手本店 神戸市中央区"
+    "mapsQuery": "神戸にしむら珈琲店 中山手本店 神戸市中央区",
+    "photo": "./photos/nishimura-coffee.webp"
   },
   {
     "name": "TRITON CAFE",
