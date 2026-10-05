@@ -38,7 +38,8 @@
     "hours": "情報源により差異あり（例：11:30〜19時台）／不定休、詳細は公式サイト要確認",
     "memo": "パンケーキ・デザートが人気の北野の名物カフェ。",
     "tabelog": "https://tabelog.com/hyogo/A2801/A280101/28000714/",
-    "mapsQuery": "TRITON CAFE 神戸北野"
+    "mapsQuery": "TRITON CAFE 神戸北野",
+    "photo": "./photos/triton-cafe.webp"
   },
   {
     "name": "カフェ フロインドリーブ 本店",
