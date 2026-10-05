@@ -601,5 +601,19 @@
     "tabelog": "https://tabelog.com/hyogo/A2801/A280101/28002413/",
     "mapsQuery": "丸高中華そば 神戸二宮 二宮店",
     "warn": "カード不可、電子マネー不可、QRコード決済不可"
+  },
+  {
+    "name": "燻製kitchen タニグチ",
+    "type": "individual",
+    "area": "sannomiya",
+    "category": "ダイニングバー",
+    "genre": "燻製料理、居酒屋",
+    "location": "阪急電鉄神戸三宮駅より徒歩5分",
+    "price": "3000円~4000円",
+    "hours": "営業時間 \n17:00~01:00 (L.O 00:30)\n定休日 不定休",
+    "memo": "香り豊かな燻製料理とウイスキーの組み合わせを、落ち着いた空間で楽しめるお店。",
+    "tabelog": "https://tabelog.com/hyogo/A2801/A280101/28060358/",
+    "mapsQuery": "燻製kitchen タニグチ",
+    "warn": "カード可(VISA、Master、JCB、AMEX、Diners)　電子マネー不可　QRコード決済可(PayPay)"
   }
 ]
