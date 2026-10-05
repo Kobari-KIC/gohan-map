@@ -643,5 +643,19 @@
     "tabelog": "https://tabelog.com/hyogo/A2801/A280102/28000637/",
     "mapsQuery": "四興樓",
     "warn": "カード可、電子マネー可、QRコード決済可"
+  },
+  {
+    "name": "濃厚煮干しラーメン 麺屋 弍星 神戸三宮東店",
+    "type": "individual",
+    "area": "sannomiya",
+    "category": "ラーメン",
+    "genre": "つけ麺",
+    "location": "JR三ノ宮駅から東へ徒歩7分程",
+    "price": "1000円~2000円",
+    "hours": "ランチ 11:30 ~ 15:00 (L.O 14:30)\nディナー 18:00 ~ 22:00 (L.O 21:30)",
+    "memo": "煮干しの濃厚な旨味を存分に味わえる、煮干しラーメン専門店。",
+    "tabelog": "https://tabelog.com/hyogo/A2801/A280101/28065589/",
+    "mapsQuery": "濃厚煮干しラーメン 麺屋 弍星 神戸三宮東店",
+    "warn": "カード不可、電子マネー不可、QRコード決済可(PayPay)"
   }
 ]
