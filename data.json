@@ -66,7 +66,8 @@
     "hours": "8:00〜22:00／不定休",
     "memo": "登録有形文化財の異人館を利用した観光名所的な店舗。",
     "tabelog": "https://tabelog.com/hyogo/A2801/A280101/28015297/",
-    "mapsQuery": "スターバックスコーヒー 神戸北野異人館店 神戸市中央区北野町"
+    "mapsQuery": "スターバックスコーヒー 神戸北野異人館店 神戸市中央区北野町",
+    "photo": "./photos/starbucks-kitano.webp"
   },
   {
     "name": "まるお食堂",
