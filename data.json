@@ -80,7 +80,8 @@
     "hours": "12:00〜15:00（詳細は変動あり、要確認）",
     "memo": "激安のとんかつ・かつ丼が人気の地下食堂。",
     "tabelog": "https://tabelog.com/hyogo/A2801/A280101/28054783/",
-    "mapsQuery": "まるお食堂 三宮町 神戸市中央区"
+    "mapsQuery": "まるお食堂 三宮町 神戸市中央区",
+    "photo": "./photos/maruo-shokudo.webp"
   },
   {
     "name": "家庭料理 なおさん",
