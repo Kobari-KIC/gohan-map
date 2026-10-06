@@ -10,8 +10,7 @@
     "hours": "月〜木 11:30-15:00/17:00-23:00、金土 11:30-15:00/17:00-24:00、日 11:30-22:00（年始以外無休）",
     "memo": "もつつけ麺・チーズつけ麺が名物の人気店。",
     "tabelog": "https://tabelog.com/hyogo/A2801/A280101/28027351/",
-    "mapsQuery": "北野坂 奥 神戸市中央区",
-    "photo": "./photos/kitanozaka-oku.webp"
+    "mapsQuery": "北野坂 奥 神戸市中央区"
   },
   {
     "name": "神戸にしむら珈琲店 中山手本店",
@@ -24,8 +23,7 @@
     "hours": "8:30〜22:00（2026年6月改定）／毎月最終月曜定休",
     "memo": "1948年創業、神戸の老舗喫茶。モーニング・トーストが人気。",
     "tabelog": "https://tabelog.com/hyogo/A2801/A280101/28000176/",
-    "mapsQuery": "神戸にしむら珈琲店 中山手本店 神戸市中央区",
-    "photo": "./photos/nishimura-coffee.webp"
+    "mapsQuery": "神戸にしむら珈琲店 中山手本店 神戸市中央区"
   },
   {
     "name": "TRITON CAFE",
@@ -38,8 +36,7 @@
     "hours": "情報源により差異あり（例：11:30〜19時台）／不定休、詳細は公式サイト要確認",
     "memo": "パンケーキ・デザートが人気の北野の名物カフェ。",
     "tabelog": "https://tabelog.com/hyogo/A2801/A280101/28000714/",
-    "mapsQuery": "TRITON CAFE 神戸北野",
-    "photo": "./photos/triton-cafe.webp"
+    "mapsQuery": "TRITON CAFE 神戸北野"
   },
   {
     "name": "カフェ フロインドリーブ 本店",
@@ -52,8 +49,7 @@
     "hours": "1Fパン屋・2Fカフェとも10:00〜18:00（カフェL.O.17:30）、モーニング10:00-11:30・ランチ11:30-14:00（平日のみ）／水曜定休（祝日は翌日）",
     "memo": "大正13年創業、教会建築をリノベしたカフェ。焼き立てパンが名物。",
     "tabelog": "https://tabelog.com/hyogo/A2801/A280101/28000366/",
-    "mapsQuery": "カフェ フロインドリーブ本店 神戸市中央区北野町",
-    "photo": "./photos/freundlieb.webp"
+    "mapsQuery": "カフェ フロインドリーブ本店 神戸市中央区北野町"
   },
   {
     "name": "スターバックスコーヒー 神戸北野異人館店",
@@ -66,8 +62,7 @@
     "hours": "8:00〜22:00／不定休",
     "memo": "登録有形文化財の異人館を利用した観光名所的な店舗。",
     "tabelog": "https://tabelog.com/hyogo/A2801/A280101/28015297/",
-    "mapsQuery": "スターバックスコーヒー 神戸北野異人館店 神戸市中央区北野町",
-    "photo": "./photos/starbucks-kitano.webp"
+    "mapsQuery": "スターバックスコーヒー 神戸北野異人館店 神戸市中央区北野町"
   },
   {
     "name": "まるお食堂",
@@ -80,8 +75,7 @@
     "hours": "12:00〜15:00（詳細は変動あり、要確認）",
     "memo": "激安のとんかつ・かつ丼が人気の地下食堂。",
     "tabelog": "https://tabelog.com/hyogo/A2801/A280101/28054783/",
-    "mapsQuery": "まるお食堂 三宮町 神戸市中央区",
-    "photo": "./photos/maruo-shokudo.webp"
+    "mapsQuery": "まるお食堂 三宮町 神戸市中央区"
   },
   {
     "name": "家庭料理 なおさん",
@@ -94,8 +88,7 @@
     "hours": "火〜日 11:00-15:00(L.O.14:30)、土日は17:30-19:00(L.O.)も営業／月曜定休",
     "memo": "2022年開業。日替わりランチ980円、家庭的な洋食・定食。",
     "tabelog": "https://tabelog.com/hyogo/A2801/A280101/28063860/",
-    "mapsQuery": "家庭料理 なおさん 神戸市中央区琴ノ緒町",
-    "photo": "./photos/naosan.webp"
+    "mapsQuery": "家庭料理 なおさん 神戸市中央区琴ノ緒町"
   },
   {
     "name": "鴻華園",

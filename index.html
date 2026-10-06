@@ -206,21 +206,8 @@ details.card summary{
   display:flex;
   flex-direction:column;
   gap:6px;
-  position:relative;
-  overflow:hidden;
 }
 details.card summary::-webkit-details-marker{display:none;}
-.s-photo{
-  position:absolute;
-  inset:0;
-  background-size:cover;
-  background-position:center;
-  opacity:.55;
-  -webkit-mask-image:linear-gradient(to right, transparent 20%, black 60%);
-  mask-image:linear-gradient(to right, transparent 20%, black 60%);
-  pointer-events:none;
-}
-.s-content{position:relative;z-index:1;display:flex;flex-direction:column;gap:6px;}
 .s-top{display:flex;justify-content:space-between;align-items:flex-start;gap:8px;}
 .s-name{font-family:"Zen Maru Gothic";font-weight:700;font-size:16px;line-height:1.35;}
 .chev{
@@ -440,22 +427,13 @@ footer{
       + (s.warn ? '<span class="badge warn">要確認</span>' : '');
 
     var summary = document.createElement('summary');
-    if (s.photo){
-      var photoLayer = document.createElement('div');
-      photoLayer.className = 's-photo';
-      photoLayer.style.backgroundImage = "url('" + s.photo + "')";
-      summary.appendChild(photoLayer);
-    }
-    var sContent = document.createElement('div');
-    sContent.className = 's-content';
-    sContent.innerHTML =
+    summary.innerHTML =
       '<div class="s-top">'
         + '<div class="s-name">'+escapeHtml(s.name)+'</div>'
         + '<svg class="chev" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>'
       + '</div>'
       + '<div class="badges">'+badges+'</div>'
       + '<div class="s-meta"><span class="price">'+escapeHtml(s.price)+'</span><span>'+escapeHtml(s.location)+'</span></div>';
-    summary.appendChild(sContent);
     el.appendChild(summary);
 
     var body = document.createElement('div');
