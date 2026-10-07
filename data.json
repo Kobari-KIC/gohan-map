@@ -278,16 +278,17 @@
   },
   {
     "name": "自由亭",
-    "genre": "洋食",
-    "category": "洋食",
     "type": "individual",
     "area": "shinkobe",
+    "category": "洋食",
+    "genre": "洋食",
     "location": "新神戸駅構内／新幹線口徒歩1分・地下鉄口徒歩2分",
-    "price": "不明",
-    "hours": "10:00〜20:30",
+    "price": "1000円 ~ 2000円",
+    "hours": "10:00〜20:30(L.O 20:30)",
     "memo": "駅構内の老舗洋食店。ナポリタン・オムライス・カツカレーが名物。",
     "tabelog": "https://tabelog.com/hyogo/A2801/A280103/28009170/",
-    "mapsQuery": "自由亭 新神戸駅 神戸市中央区"
+    "mapsQuery": "自由亭 新神戸駅 神戸市中央区",
+    "warn": "カード可  （VISA、Master、JCB）  電子マネー可  （交通系電子マネー（Suicaなど））  QRコード決済可  （PayPay）"
   },
   {
     "name": "キッチン マルシン（中華・洋食マルシン）",
