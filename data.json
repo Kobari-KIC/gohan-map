@@ -357,16 +357,17 @@
   },
   {
     "name": "繁盛・神戸屋",
-    "genre": "居酒屋",
-    "category": "居酒屋",
     "type": "individual",
     "area": "kobe",
+    "category": "居酒屋",
+    "genre": "居酒屋",
     "location": "神戸市中央区相生町4-4-20 原田ビル3F／JR神戸駅から徒歩5分程度",
-    "price": "不明",
+    "price": "3000円 ~ 4000円",
     "hours": "16:00〜翌0:00（L.O.23:30）",
     "memo": "神戸駅前の飲食店街にある居酒屋。",
     "tabelog": "https://tabelog.com/hyogo/A2801/A280102/28073531/",
-    "mapsQuery": "繁盛神戸屋 神戸駅"
+    "mapsQuery": "繁盛神戸屋 神戸駅",
+    "warn": "カード可  （VISA、Master、JCB、AMEX）  電子マネー不可  QRコード決済不可"
   },
   {
     "name": "らーめん 会 神戸本店",
