@@ -670,18 +670,18 @@
     "payment": "カード不可、電子マネー不可、QRコード決済不可"
   },
   {
-    "name": "炭焼すてーき きた山",
-    "genre": "ステーキ（特選神戸ビーフの炭焼き）",
-    "category": "ステーキ",
+    "name": "炭焼ステーキ きた山",
     "type": "individual",
     "area": "kitano",
+    "category": "ステーキ",
+    "genre": "ステーキ（特選神戸ビーフの炭焼き）",
     "location": "神戸市中央区加納町4-7-11 パレ北野坂2F／学校から北野坂を下って徒歩5〜7分程度",
     "price": "ランチ平均3,000円／ディナー平均5,500円",
     "hours": "火〜日11:30〜14:00(L.O.13:45)、17:30〜22:00(L.O.21:00)／定休日：月、第2・3火曜",
+    "payment": "カード可（VISA、JCB、AMEX）、電子マネー可（交通系ICカード Suica、Rakuten-Edy、nanaco、WAON、iD、QUICPay）、QRコード決済可（PayPay、Rakuten Pay）",
     "memo": "1967年創業。特選神戸ビーフをシンプルにステーキで提供。",
     "tabelog": "https://tabelog.com/hyogo/A2801/A280101/28001063/",
-    "mapsQuery": "炭焼すてーき きた山 神戸市中央区加納町4-7-11",
-    "payment": "カード可（VISA、JCB、AMEX）、電子マネー可（交通系ICカード Suica、Rakuten-Edy、nanaco、WAON、iD、QUICPay）、QRコード決済可（PayPay、Rakuten Pay）"
+    "mapsQuery": "炭焼すてーき きた山 神戸市中央区加納町4-7-11"
   },
   {
     "name": "THIS IS MY CHICKEN 三宮店",
