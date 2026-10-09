@@ -307,19 +307,6 @@
     "payment": "カード不可、電子マネー不可、QRコード決済不可"
   },
   {
-    "name": "出雲食堂",
-    "genre": "定食・食堂",
-    "category": "定食・食堂",
-    "type": "individual",
-    "area": "kobe",
-    "location": "神戸市中央区多聞通3-2-18／JR神戸駅北口から徒歩1〜2分",
-    "price": "〜1000円未満（オムライス・焼めし各550円）",
-    "hours": "11:00〜19:00、木曜定休",
-    "memo": "昭和レトロな外観、おばんざい小鉢と昼飲みも楽しめる。約40年営業の老舗。",
-    "tabelog": null,
-    "mapsQuery": "出雲食堂 神戸駅"
-  },
-  {
     "name": "BINDASS HOUSE JUKSON（ジュクソン）",
     "genre": "インド・ネパール料理",
     "category": "インド・ネパール",
