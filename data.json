@@ -10,7 +10,8 @@
     "hours": "月〜木 11:30-15:00/17:00-23:00、金土 11:30-15:00/17:00-24:00、日 11:30-22:00（年始以外無休）",
     "memo": "もつつけ麺・チーズつけ麺が名物の人気店。",
     "tabelog": "https://tabelog.com/hyogo/A2801/A280101/28027351/",
-    "mapsQuery": "北野坂 奥 神戸市中央区"
+    "mapsQuery": "北野坂 奥 神戸市中央区",
+    "payment": "カード可（VISA、Master、JCB、AMEX、Diners、UnionPay）、電子マネー可（交通系ICカード Suica）、QRコード決済可（PayPay、d Barai、Rakuten Pay、au PAY、Alipay）"
   },
   {
     "name": "神戸にしむら珈琲店 中山手本店",
@@ -23,7 +24,8 @@
     "hours": "8:30〜22:00（2026年6月改定）／毎月最終月曜定休",
     "memo": "1948年創業、神戸の老舗喫茶。モーニング・トーストが人気。",
     "tabelog": "https://tabelog.com/hyogo/A2801/A280101/28000176/",
-    "mapsQuery": "神戸にしむら珈琲店 中山手本店 神戸市中央区"
+    "mapsQuery": "神戸にしむら珈琲店 中山手本店 神戸市中央区",
+    "payment": "カード可（VISA、JCB）、電子マネー可、QRコード決済可"
   },
   {
     "name": "TRITON CAFE",
@@ -36,7 +38,8 @@
     "hours": "情報源により差異あり（例：11:30〜19時台）／不定休、詳細は公式サイト要確認",
     "memo": "パンケーキ・デザートが人気の北野の名物カフェ。",
     "tabelog": "https://tabelog.com/hyogo/A2801/A280101/28000714/",
-    "mapsQuery": "TRITON CAFE 神戸北野"
+    "mapsQuery": "TRITON CAFE 神戸北野",
+    "payment": "カード可（VISA、Master、JCB、AMEX、Diners）、電子マネー可（交通系ICカード Suica、iD、QUICPay）、QRコード決済可（PayPay、d Barai、Rakuten Pay）"
   },
   {
     "name": "カフェ フロインドリーブ 本店",
@@ -49,7 +52,8 @@
     "hours": "1Fパン屋・2Fカフェとも10:00〜18:00（カフェL.O.17:30）、モーニング10:00-11:30・ランチ11:30-14:00（平日のみ）／水曜定休（祝日は翌日）",
     "memo": "大正13年創業、教会建築をリノベしたカフェ。焼き立てパンが名物。",
     "tabelog": "https://tabelog.com/hyogo/A2801/A280101/28000366/",
-    "mapsQuery": "カフェ フロインドリーブ本店 神戸市中央区北野町"
+    "mapsQuery": "カフェ フロインドリーブ本店 神戸市中央区北野町",
+    "payment": "カード可（VISA、Master、JCB、AMEX）、電子マネー不可、QRコード決済可（PayPay、d Barai、Rakuten Pay、au PAY）"
   },
   {
     "name": "スターバックスコーヒー 神戸北野異人館店",
@@ -62,7 +66,8 @@
     "hours": "8:00〜22:00／不定休",
     "memo": "登録有形文化財の異人館を利用した観光名所的な店舗。",
     "tabelog": "https://tabelog.com/hyogo/A2801/A280101/28015297/",
-    "mapsQuery": "スターバックスコーヒー 神戸北野異人館店 神戸市中央区北野町"
+    "mapsQuery": "スターバックスコーヒー 神戸北野異人館店 神戸市中央区北野町",
+    "payment": "カード可（Master）、電子マネー可、QRコード決済可"
   },
   {
     "name": "まるお食堂",
@@ -75,7 +80,8 @@
     "hours": "12:00〜15:00（詳細は変動あり、要確認）",
     "memo": "激安のとんかつ・かつ丼が人気の地下食堂。",
     "tabelog": "https://tabelog.com/hyogo/A2801/A280101/28054783/",
-    "mapsQuery": "まるお食堂 三宮町 神戸市中央区"
+    "mapsQuery": "まるお食堂 三宮町 神戸市中央区",
+    "payment": "カード不可、電子マネー不可、QRコード決済不可"
   },
   {
     "name": "家庭料理 なおさん",
@@ -88,7 +94,8 @@
     "hours": "火〜日 11:00-15:00(L.O.14:30)、土日は17:30-19:00(L.O.)も営業／月曜定休",
     "memo": "2022年開業。日替わりランチ980円、家庭的な洋食・定食。",
     "tabelog": "https://tabelog.com/hyogo/A2801/A280101/28063860/",
-    "mapsQuery": "家庭料理 なおさん 神戸市中央区琴ノ緒町"
+    "mapsQuery": "家庭料理 なおさん 神戸市中央区琴ノ緒町",
+    "payment": "カード可（VISA、Master、JCB、AMEX、Diners）、電子マネー可（交通系ICカード Suica、nanaco、WAON、iD、QUICPay）、QRコード決済可（PayPay、d Barai、Rakuten Pay、au PAY）"
   },
   {
     "name": "鴻華園",
@@ -115,7 +122,8 @@
     "hours": "不明（店舗個別の営業時間は未確認）",
     "memo": "辛さ・ご飯量・トッピングを自由に選べる全国チェーン。",
     "tabelog": "https://tabelog.com/hyogo/A2801/A280101/28018433/",
-    "mapsQuery": "CoCo壱番屋 JR三ノ宮駅東口店 神戸市中央区"
+    "mapsQuery": "CoCo壱番屋 JR三ノ宮駅東口店 神戸市中央区",
+    "payment": "カード可（VISA、Master、JCB、AMEX、Diners）、電子マネー可（交通系ICカード Suica、Rakuten-Edy、iD、QUICPay）"
   },
   {
     "name": "松屋 三宮東店",
@@ -141,7 +149,8 @@
     "hours": "月〜土 11:00-23:30(L.O.23:00)、日 11:00-22:30(L.O.22:00)／定休日不明",
     "memo": "餃子・炒飯・天津飯など定番中華が揃う全国チェーン。",
     "tabelog": "https://tabelog.com/hyogo/A2801/A280101/28013413/",
-    "mapsQuery": "餃子の王将 三宮下山手通り店 神戸市中央区"
+    "mapsQuery": "餃子の王将 三宮下山手通り店 神戸市中央区",
+    "payment": "カード可（VISA、Master、JCB、AMEX、Diners）、電子マネー可（交通系ICカード Suica、Rakuten-Edy、nanaco、WAON、iD、QUICPay）、QRコード決済可（PayPay、Rakuten Pay、au PAY）"
   },
   {
     "name": "サイゼリヤ 三宮センター街店",
@@ -154,7 +163,8 @@
     "hours": "10:00〜22:00／定休日不明",
     "memo": "ドリンクバー・パスタが安く食べられる全国チェーン。",
     "tabelog": "https://tabelog.com/hyogo/A2801/A280101/28033546/",
-    "mapsQuery": "サイゼリヤ 三宮センター街店 神戸市中央区"
+    "mapsQuery": "サイゼリヤ 三宮センター街店 神戸市中央区",
+    "payment": "カード不可、電子マネー不可"
   },
   {
     "name": "丸亀製麺 三宮店",
@@ -167,7 +177,8 @@
     "hours": "10:00〜22:00(L.O.21:30)／定休日不明",
     "memo": "揚げたて天ぷらが選べる讃岐うどんの全国チェーン。",
     "tabelog": "https://tabelog.com/hyogo/A2801/A280102/28021769/",
-    "mapsQuery": "丸亀製麺 三宮店 神戸市中央区"
+    "mapsQuery": "丸亀製麺 三宮店 神戸市中央区",
+    "payment": "カード不可、電子マネー不可"
   },
   {
     "name": "すき家 三宮駅東店",
@@ -193,7 +204,8 @@
     "hours": "不明（本店の詳細営業時間は未確認）",
     "memo": "神戸発祥のベーカリーチェーンの本店。クリームパンが人気。",
     "tabelog": "https://tabelog.com/hyogo/A2801/A280102/28070139/",
-    "mapsQuery": "DONQ 三宮本店 神戸市中央区三宮町"
+    "mapsQuery": "DONQ 三宮本店 神戸市中央区三宮町",
+    "payment": "カード可、電子マネー可、QRコード決済可"
   },
   {
     "name": "モスバーガー 三ノ宮駅東店",
@@ -206,7 +218,8 @@
     "hours": "9:30〜21:00（平日・土日祝共通、2025年9月改定）／水曜定休",
     "memo": "全国チェーンのハンバーガー店。",
     "tabelog": "https://tabelog.com/hyogo/A2801/A280101/28069626/",
-    "mapsQuery": "モスバーガー 三ノ宮駅東店 神戸市中央区"
+    "mapsQuery": "モスバーガー 三ノ宮駅東店 神戸市中央区",
+    "payment": "カード可、電子マネー可、QRコード決済可"
   },
   {
     "name": "猪八戒",
@@ -233,7 +246,8 @@
     "hours": "月〜金 17:00〜24:00(L.O.23:30)、土日祝 11:30-15:00(L.O.14:50)/17:00-24:00(L.O.23:30)／不定休",
     "memo": "麻婆豆腐定食770円など、安さが人気。",
     "tabelog": "https://tabelog.com/hyogo/A2801/A280102/28068676/",
-    "mapsQuery": "豊味園 元町店 神戸市中央区"
+    "mapsQuery": "豊味園 元町店 神戸市中央区",
+    "payment": "カード不可、電子マネー不可、QRコード決済不可"
   },
   {
     "name": "元祖ぎょうざ苑",
@@ -261,7 +275,8 @@
     "memo": "神戸の老舗餃子店。",
     "tabelog": "https://tabelog.com/hyogo/A2801/A280102/28061325/",
     "mapsQuery": "三宮一貫楼 本店 神戸市中央区三宮町",
-    "warn": "⚠️ 2025年3月28日から施設修繕のためレストラン部分は休業中（テイクアウトのみ営業という情報あり）。最新の営業再開状況は要確認。"
+    "warn": "⚠️ 2025年3月28日から施設修繕のためレストラン部分は休業中（テイクアウトのみ営業という情報あり）。最新の営業再開状況は要確認。",
+    "payment": "カード可（VISA、Master、JCB、AMEX、Diners）、電子マネー可、QRコード決済可（PayPay）"
   },
   {
     "name": "天下一品 神戸・元町店",
@@ -274,7 +289,8 @@
     "hours": "11:30〜23:00（日曜以外の祝日は〜21:00）／日曜定休",
     "memo": "「こってり」スープで有名な全国チェーン。学生にも人気。",
     "tabelog": "https://tabelog.com/hyogo/A2801/A280102/28007254/",
-    "mapsQuery": "天下一品 神戸元町店 神戸市中央区"
+    "mapsQuery": "天下一品 神戸元町店 神戸市中央区",
+    "payment": "カード不可、電子マネー不可、QRコード決済可（PayPay）"
   },
   {
     "name": "キッチン マルシン（中華・洋食マルシン）",
@@ -287,7 +303,8 @@
     "hours": "10:30〜22:00、定休日は木・日（情報源により差異あり）",
     "memo": "チキンカツ定食400円など激安メニューで有名な昔ながらの食堂。",
     "tabelog": "https://tabelog.com/hyogo/A2801/A280102/28010330/",
-    "mapsQuery": "キッチンマルシン 神戸駅"
+    "mapsQuery": "キッチンマルシン 神戸駅",
+    "payment": "カード不可、電子マネー不可、QRコード決済不可"
   },
   {
     "name": "出雲食堂",
@@ -313,7 +330,8 @@
     "hours": "11:00〜22:00、定休日不明",
     "memo": "お疲れ様セット850円などワンコインランチあり。",
     "tabelog": "https://tabelog.com/hyogo/A2801/A280102/28067143/",
-    "mapsQuery": "BINDASS HOUSE JUKSON 神戸駅"
+    "mapsQuery": "BINDASS HOUSE JUKSON 神戸駅",
+    "payment": "カード可（VISA、Master、JCB、AMEX、Diners）、電子マネー不可、QRコード決済可（PayPay、d Barai、Rakuten Pay、au PAY）"
   },
   {
     "name": "旬菜五郎",
@@ -326,7 +344,8 @@
     "hours": "11:30〜14:30（売切次第終了）、土日・不定休",
     "memo": "カウンター5席のみ。日替わり定食1品のみ、ご飯・味噌汁おかわり自由の隠れ家食堂。",
     "tabelog": "https://tabelog.com/hyogo/A2801/A280102/28043309/",
-    "mapsQuery": "旬菜五郎 神戸駅"
+    "mapsQuery": "旬菜五郎 神戸駅",
+    "payment": "カード不可、電子マネー不可、QRコード決済不可"
   },
   {
     "name": "お食事処 竹島",
@@ -366,7 +385,8 @@
     "hours": "11:00〜14:00／18:00〜21:00（スープ売切終了）、水曜・祝日定休",
     "memo": "化学調味料無添加、豚軟骨チャーシューが人気。",
     "tabelog": "https://tabelog.com/hyogo/A2801/A280102/28027609/",
-    "mapsQuery": "らーめん会 神戸本店"
+    "mapsQuery": "らーめん会 神戸本店",
+    "payment": "カード不可、電子マネー不可、QRコード決済不可"
   },
   {
     "name": "TATSU（辰）",
@@ -379,7 +399,8 @@
     "hours": "16:00〜24:00（夜）、定休日不明",
     "memo": "レトロな店構えの隠れ家的居酒屋。",
     "tabelog": "https://tabelog.com/hyogo/A2801/A280102/28040255/",
-    "mapsQuery": "TATSU 辰 神戸駅"
+    "mapsQuery": "TATSU 辰 神戸駅",
+    "payment": "カード可（VISA、Master、JCB）、電子マネー可"
   },
   {
     "name": "炭火焼肉屋台 たじま屋",
@@ -406,7 +427,8 @@
     "hours": "11:00〜14:00／17:00〜20:00、日曜定休",
     "memo": "2014年開業、行列のできる人気洋食店。兵庫県内に複数店舗の小規模チェーン。",
     "tabelog": "https://tabelog.com/hyogo/A2801/A280102/28041256/",
-    "mapsQuery": "洋食のマルヤ 西元町店"
+    "mapsQuery": "洋食のマルヤ 西元町店",
+    "payment": "カード不可、電子マネー不可、QRコード決済不可"
   },
   {
     "name": "神戸ラーメン 第一旭 神戸本店",
@@ -433,7 +455,8 @@
     "hours": "24時間営業",
     "memo": "24時間営業の定食チェーン、全席禁煙。",
     "tabelog": "https://tabelog.com/hyogo/A2801/A280102/28005397/",
-    "mapsQuery": "宮本むなし JR神戸駅前店"
+    "mapsQuery": "宮本むなし JR神戸駅前店",
+    "payment": "カード不可"
   },
   {
     "name": "活伊勢海老料理 中納言 神戸ハーバーランド店",
@@ -459,7 +482,8 @@
     "hours": "10:00〜20:00",
     "memo": "讃岐釜揚げうどんのセルフ式チェーン。",
     "tabelog": "https://tabelog.com/hyogo/A2801/A280102/28038209/",
-    "mapsQuery": "丸亀製麺 神戸ハーバーランドumie"
+    "mapsQuery": "丸亀製麺 神戸ハーバーランドumie",
+    "payment": "カード可"
   },
   {
     "name": "J.S. BURGERS CAFE 神戸ハーバーランドumie店",
@@ -472,7 +496,8 @@
     "hours": "10:00〜20:00（L.O.19:30）",
     "memo": "サラダ食べ放題の平日ランチが人気。",
     "tabelog": "https://tabelog.com/hyogo/A2801/A280102/28064892/",
-    "mapsQuery": "J.S.BURGERS CAFE 神戸ハーバーランドumie"
+    "mapsQuery": "J.S.BURGERS CAFE 神戸ハーバーランドumie",
+    "payment": "カード可、電子マネー可、QRコード決済可"
   },
   {
     "name": "廣岡揮八郎の三田屋 神戸ハーバーランド店",
@@ -485,7 +510,8 @@
     "hours": "不明（テイクアウト窓口は11:30〜19:00L.O.）",
     "memo": "ステーキとクラフトビールが楽しめる。兵庫県内に複数店舗展開。",
     "tabelog": "https://tabelog.com/hyogo/A2801/A280102/28000430/",
-    "mapsQuery": "三田屋 神戸ハーバーランド店"
+    "mapsQuery": "三田屋 神戸ハーバーランド店",
+    "payment": "カード可（VISA、Master、JCB、AMEX、Diners）、電子マネー可（交通系ICカード Suica、WAON、iD、QUICPay）、QRコード決済可（PayPay、Alipay、WeChat Pay）"
   },
   {
     "name": "神戸元町ドリア umie MOSAIC店",
@@ -511,7 +537,8 @@
     "hours": "10:00〜20:00（情報源により21:00までとの記載もあり）",
     "memo": "餃子が看板メニューの中華チェーン。",
     "tabelog": "https://tabelog.com/hyogo/A2801/A280102/28038195/",
-    "mapsQuery": "大阪王将 神戸ハーバーランドumie"
+    "mapsQuery": "大阪王将 神戸ハーバーランドumie",
+    "payment": "カード可（VISA、Master、JCB、AMEX、Diners）、電子マネー可（交通系ICカード Suica、Rakuten-Edy、WAON、iD、QUICPay）、QRコード決済可（PayPay）"
   },
   {
     "name": "仙台牛たん福助 神戸ハーバーランドumie店",
@@ -524,7 +551,8 @@
     "hours": "11:00〜22:00（L.O.21:30）",
     "memo": "炭火で焼く牛タン塩・味噌が名物。",
     "tabelog": "https://tabelog.com/hyogo/A2801/A280102/28043581/",
-    "mapsQuery": "仙台牛たん福助 神戸ハーバーランドumie"
+    "mapsQuery": "仙台牛たん福助 神戸ハーバーランドumie",
+    "payment": "カード可、電子マネー可、QRコード決済可"
   },
   {
     "name": "どうとんぼり神座 神戸ハーバーランドumie店",
@@ -676,7 +704,8 @@
     "hours": "ランチ11:30〜14:30(L.O.14:00)、ディナー18:00〜22:00(L.O.21:30)／定休日：火（情報源により第1・3月も休の記載あり、要確認）",
     "memo": "1998年創業の洋食百名店。名物「サクラライス」（チキンライス×トンカツ×ホワイトソース）。開店前から行列も。",
     "tabelog": "https://tabelog.com/hyogo/A2801/A280101/28000394/",
-    "mapsQuery": "グリル末松 神戸市中央区加納町2-1-9"
+    "mapsQuery": "グリル末松 神戸市中央区加納町2-1-9",
+    "payment": "カード不可、電子マネー不可、QRコード決済不可"
   },
   {
     "name": "のわのわカフェ",
@@ -689,7 +718,8 @@
     "hours": "月〜土・祝18:00〜翌3:00、日18:00〜翌1:00／不定休",
     "memo": "深夜3時まで営業の深夜カフェ。ふわふわ卵のオムライスが名物。",
     "tabelog": "https://tabelog.com/hyogo/A2801/A280101/28033609/",
-    "mapsQuery": "のわのわカフェ 神戸市中央区加納町3-12-13"
+    "mapsQuery": "のわのわカフェ 神戸市中央区加納町3-12-13",
+    "payment": "カード不可、電子マネー不可"
   },
   {
     "name": "麺蔵 加納町本店",
@@ -702,7 +732,8 @@
     "hours": "情報源により差あり（深夜営業、11:00〜翌5時台等）／無休",
     "memo": "1985年創業の老舗。自家製キムチのキムチらーめんが名物、深夜の〆需要も高い。",
     "tabelog": "https://tabelog.com/hyogo/A2801/A280101/28001262/",
-    "mapsQuery": "麺蔵 加納町本店 神戸市中央区加納町3-13-1"
+    "mapsQuery": "麺蔵 加納町本店 神戸市中央区加納町3-13-1",
+    "payment": "カード可（VISA、Master、JCB、AMEX、Diners）、電子マネー不可"
   },
   {
     "name": "炭焼酒場いのうえ 神戸北野坂店",
@@ -715,7 +746,8 @@
     "hours": "月〜木・日・祝16:00〜翌3:00(L.O.2:00)、金・土・祝前日16:00〜翌5:00(L.O.4:00)／定休日なし",
     "memo": "2025年9月オープンの新店。備長炭使用、42席・テラス席・個室1室。",
     "tabelog": "https://tabelog.com/hyogo/A2801/A280101/28073933/",
-    "mapsQuery": "炭焼酒場いのうえ 神戸北野坂店 加納町4-7-7"
+    "mapsQuery": "炭焼酒場いのうえ 神戸北野坂店 加納町4-7-7",
+    "payment": "カード可（VISA、Master、JCB、AMEX、Diners、UnionPay）、電子マネー不可、QRコード決済可（PayPay）"
   },
   {
     "name": "味加味",
@@ -728,7 +760,8 @@
     "hours": "情報源により差あり。目安：ランチ11:30〜15:00、ディナー17:00〜22:00(L.O.21:40)／定休日：火曜（要確認）",
     "memo": "元うどん店で、うどん・そばも充実。日替わり定食が人気の約60席の食堂。",
     "tabelog": "https://tabelog.com/hyogo/A2801/A280101/28055322/",
-    "mapsQuery": "味加味 みかみ 神戸市中央区中山手通1-22-23"
+    "mapsQuery": "味加味 みかみ 神戸市中央区中山手通1-22-23",
+    "payment": "カード可（VISA、Master、JCB、AMEX、Diners）、電子マネー不可"
   },
   {
     "name": "北野坂 栄ゐ田",
@@ -741,7 +774,8 @@
     "hours": "ランチ11:30〜13:00(L.O.)、ディナー18:00〜21:00(L.O.)／不定休",
     "memo": "淡路・昼網の魚介や神戸産野菜使用。日本酒50種以上。",
     "tabelog": "https://tabelog.com/hyogo/A2801/A280101/28020393/",
-    "mapsQuery": "北野坂 栄ゐ田 神戸市中央区中山手通1-22-13"
+    "mapsQuery": "北野坂 栄ゐ田 神戸市中央区中山手通1-22-13",
+    "payment": "カード可（VISA、Master、JCB、AMEX、Diners）、電子マネー不可、QRコード決済不可"
   },
   {
     "name": "キヨリト食堂",
@@ -754,7 +788,8 @@
     "hours": "17:00〜24:00／不明",
     "memo": "北海道産の新鮮な牡蠣を生・焼き・フライで提供。釜飯・ケサディーヤもあり。",
     "tabelog": "https://tabelog.com/hyogo/A2801/A280101/28057888/",
-    "mapsQuery": "キヨリト食堂 神戸市中央区中山手通1-21-13"
+    "mapsQuery": "キヨリト食堂 神戸市中央区中山手通1-21-13",
+    "payment": "カード不可、電子マネー不可、QRコード決済不可"
   },
   {
     "name": "炭焼すてーき きた山",
@@ -767,7 +802,8 @@
     "hours": "火〜日11:30〜14:00(L.O.13:45)、17:30〜22:00(L.O.21:00)／定休日：月、第2・3火曜",
     "memo": "1967年創業。特選神戸ビーフをシンプルにステーキで提供。",
     "tabelog": "https://tabelog.com/hyogo/A2801/A280101/28001063/",
-    "mapsQuery": "炭焼すてーき きた山 神戸市中央区加納町4-7-11"
+    "mapsQuery": "炭焼すてーき きた山 神戸市中央区加納町4-7-11",
+    "payment": "カード可（VISA、JCB、AMEX）、電子マネー可（交通系ICカード Suica、Rakuten-Edy、nanaco、WAON、iD、QUICPay）、QRコード決済可（PayPay、Rakuten Pay）"
   },
   {
     "name": "THIS IS MY CHICKEN 三宮店",
@@ -780,6 +816,7 @@
     "hours": "11:30〜20:00（L.O.19:30）／定休日不明",
     "memo": "鶏胸肉を使ったタルタルチキンバーガーや自家製ナゲットが人気。開店待ちの行列ができることも。",
     "tabelog": "https://tabelog.com/hyogo/A2801/A280101/28075931/",
-    "mapsQuery": "THIS IS MY CHICKEN 三宮店 磯上通7-1-28 神戸"
+    "mapsQuery": "THIS IS MY CHICKEN 三宮店 磯上通7-1-28 神戸",
+    "payment": "カード可、電子マネー可、QRコード決済可"
   }
 ]
