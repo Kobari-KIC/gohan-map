@@ -768,5 +768,18 @@
     "memo": "1967年創業。特選神戸ビーフをシンプルにステーキで提供。",
     "tabelog": "https://tabelog.com/hyogo/A2801/A280101/28001063/",
     "mapsQuery": "炭焼すてーき きた山 神戸市中央区加納町4-7-11"
+  },
+  {
+    "name": "THIS IS MY CHICKEN 三宮店",
+    "genre": "チキンバーガー専門店",
+    "category": "ハンバーガー",
+    "type": "chain",
+    "area": "sannomiya",
+    "location": "神戸市中央区磯上通7-1-28 GROOVE神戸三宮ビル 1F／三宮・花時計前駅から徒歩約2分",
+    "price": "1,000〜1,999円",
+    "hours": "11:30〜20:00（L.O.19:30）／定休日不明",
+    "memo": "鶏胸肉を使ったタルタルチキンバーガーや自家製ナゲットが人気。開店待ちの行列ができることも。",
+    "tabelog": "https://tabelog.com/hyogo/A2801/A280101/28075931/",
+    "mapsQuery": "THIS IS MY CHICKEN 三宮店 磯上通7-1-28 神戸"
   }
 ]
