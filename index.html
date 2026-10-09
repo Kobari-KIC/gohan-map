@@ -232,6 +232,8 @@ details[open] .chev{transform:rotate(180deg);}
 .badge.area{background:var(--surface-alt);color:var(--muted);}
 .badge.genre{background:var(--surface-alt);color:var(--ink);}
 .badge.warn{background:var(--warn-bg);color:var(--warn-ink);}
+.badge.pay-ok{background:color-mix(in srgb, var(--chain) 16%, var(--surface));color:var(--chain);}
+.badge.pay-cash{background:var(--surface-alt);color:var(--muted);}
 
 .s-meta{font-size:12.5px;color:var(--muted);display:flex;gap:10px;flex-wrap:wrap;}
 .s-meta .price{color:var(--gold);font-weight:700;font-variant-numeric:tabular-nums;}
@@ -421,9 +423,17 @@ footer{
     el.className = 'card';
 
     var typeLabel = s.type === 'chain' ? 'チェーン店' : '個人店';
+    var payText = s.payment || '';
+    var hasCashless = /カード可|電子マネー可|QRコード決済可/.test(payText);
+    var allCashOnly = payText && !hasCashless && /不可/.test(payText);
+    var payBadge = '';
+    if (hasCashless) payBadge = '<span class="badge pay-ok">💳 キャッシュレス可</span>';
+    else if (allCashOnly) payBadge = '<span class="badge pay-cash">💴 現金のみ</span>';
+
     var badges = '<span class="badge type-'+s.type+'">'+typeLabel+'</span>'
       + '<span class="badge area">'+(AREA_LABEL[s.area] || s.area)+'</span>'
       + '<span class="badge genre">'+escapeHtml(s.genre)+'</span>'
+      + payBadge
       + (s.warn ? '<span class="badge warn">要確認</span>' : '');
 
     var summary = document.createElement('summary');
@@ -440,7 +450,8 @@ footer{
     body.className = 'card-body';
 
     var rows =
-      '<div class="row"><span class="label">営業時間</span><span class="val">'+escapeHtml(s.hours)+'</span></div>';
+      '<div class="row"><span class="label">営業時間</span><span class="val">'+escapeHtml(s.hours)+'</span></div>'
+      + '<div class="row"><span class="label">支払い方法</span><span class="val">'+escapeHtml(s.payment || '不明')+'</span></div>';
 
     body.innerHTML = rows
       + (s.memo ? '<div class="memo">'+escapeHtml(s.memo)+'</div>' : '')

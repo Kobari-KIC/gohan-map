@@ -166,6 +166,9 @@ textarea{min-height:56px; resize:vertical;}
     <label>営業時間・定休日
       <textarea id="f_hours" placeholder="不明なら「不明」でOK"></textarea>
     </label>
+    <label>支払い方法
+      <input type="text" id="f_payment" placeholder="例：カード可（VISA他）、電子マネー不可、QR決済可（PayPay）。不明なら空欄でOK" />
+    </label>
     <label>一言メモ
       <textarea id="f_memo"></textarea>
     </label>
@@ -387,6 +390,7 @@ textarea{min-height:56px; resize:vertical;}
       location: document.getElementById('f_location'),
       price: document.getElementById('f_price'),
       hours: document.getElementById('f_hours'),
+      payment: document.getElementById('f_payment'),
       memo: document.getElementById('f_memo'),
       tabelog: document.getElementById('f_tabelog'),
       mapsQuery: document.getElementById('f_mapsQuery'),
@@ -414,6 +418,7 @@ textarea{min-height:56px; resize:vertical;}
     f.location.value = s.location || '';
     f.price.value = s.price || '';
     f.hours.value = s.hours || '';
+    f.payment.value = s.payment || '';
     f.memo.value = s.memo || '';
     f.tabelog.value = s.tabelog || '';
     f.mapsQuery.value = s.mapsQuery || '';
@@ -447,6 +452,7 @@ textarea{min-height:56px; resize:vertical;}
       location: f.location.value.trim(),
       price: f.price.value.trim() || '不明',
       hours: f.hours.value.trim() || '不明',
+      payment: f.payment.value.trim() || '不明',
       memo: f.memo.value.trim(),
       tabelog: f.tabelog.value.trim() || null,
       mapsQuery: f.mapsQuery.value.trim() || (f.name.value.trim() + ' ' + (AREA_LABEL[f.area.value]||''))

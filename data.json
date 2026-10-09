@@ -102,7 +102,7 @@
     "memo": "リーズナブルな中華・エスニック料理。ランチが人気。",
     "tabelog": "https://tabelog.com/hyogo/A2801/A280101/28000719/",
     "mapsQuery": "鴻華園 トアロード 神戸市中央区",
-    "warn": "カード不可、電子マネー不可、QRコード決済不可"
+    "payment": "カード不可、電子マネー不可、QRコード決済不可"
   },
   {
     "name": "CoCo壱番屋 JR三ノ宮駅東口店",
@@ -220,7 +220,7 @@
     "memo": "点心・飲茶のオーダーバイキング（90分制）が名物。",
     "tabelog": "https://tabelog.com/hyogo/A2801/A280102/28051282/",
     "mapsQuery": "猪八戒 南京町 神戸市中央区",
-    "warn": "カード不可  電子マネー不可  QRコード決済不可"
+    "payment": "カード不可  電子マネー不可  QRコード決済不可"
   },
   {
     "name": "豊味園 元町店",
@@ -247,7 +247,7 @@
     "memo": "昭和26年創業、神戸餃子・味噌だれ発祥の老舗。",
     "tabelog": "https://tabelog.com/hyogo/A2801/A280102/28000849/",
     "mapsQuery": "元祖ぎょうざ苑 南京町 神戸市中央区",
-    "warn": "カード可（VISA、Master、JCB、AMEX）  電子マネー不可  QRコード決済可  （PayPay）"
+    "payment": "カード可（VISA、Master、JCB、AMEX）  電子マネー不可  QRコード決済可  （PayPay）"
   },
   {
     "name": "三宮一貫楼 本店",
@@ -353,7 +353,7 @@
     "memo": "神戸駅前の飲食店街にある居酒屋。",
     "tabelog": "https://tabelog.com/hyogo/A2801/A280102/28073531/",
     "mapsQuery": "繁盛神戸屋 神戸駅",
-    "warn": "カード可  （VISA、Master、JCB、AMEX）  電子マネー不可  QRコード決済不可"
+    "payment": "カード可  （VISA、Master、JCB、AMEX）  電子マネー不可  QRコード決済不可"
   },
   {
     "name": "らーめん 会 神戸本店",
@@ -393,7 +393,7 @@
     "memo": "炭火焼肉の人気店、予約推奨。",
     "tabelog": "https://tabelog.com/hyogo/A2801/A280109/28004023/",
     "mapsQuery": "炭火焼肉屋台たじま屋 神戸駅",
-    "warn": "カード不可  電子マネー不可  QRコード決済不可"
+    "payment": "カード不可  電子マネー不可  QRコード決済不可"
   },
   {
     "name": "洋食のマルヤ 西元町店",
@@ -420,7 +420,7 @@
     "memo": "昔ながらの醤油ラーメン、駅近で入りやすい。",
     "tabelog": "https://tabelog.com/hyogo/A2801/A280102/28002743/",
     "mapsQuery": "第一旭 神戸本店",
-    "warn": "カード不可  電子マネー不可  QRコード決済不可"
+    "payment": "カード不可  電子マネー不可  QRコード決済不可"
   },
   {
     "name": "めしや 宮本むなし JR神戸駅前店",
@@ -551,7 +551,7 @@
     "memo": "神戸らしい昔ながらの洋食を、リーズナブルに楽しめる人気店。",
     "tabelog": "https://tabelog.com/hyogo/A2801/A280102/28048408/",
     "mapsQuery": "洋食の藤",
-    "warn": "支払い方法 カード、QRコード決済、電子マネー不可"
+    "payment": "カード、QRコード決済、電子マネー不可"
   },
   {
     "name": "オールドスパゲッティ",
@@ -565,7 +565,7 @@
     "memo": "歴史ある煉瓦倉庫のレトロな空間で、豊富な種類のパスタやピザを楽しめるお店。",
     "tabelog": "https://tabelog.com/hyogo/A2801/A280102/28000597/",
     "mapsQuery": "オールド･スパゲティ･ファクトリー 神戸店",
-    "warn": "支払い方法 カード可  （VISA、Master、JCB、AMEX）、電子マネー不可、QRコード決済可  （PayPay）"
+    "payment": "カード可  （VISA、Master、JCB、AMEX）、電子マネー不可、QRコード決済可  （PayPay）"
   },
   {
     "name": "港町MOTHER",
@@ -579,7 +579,7 @@
     "memo": "こだわりのチキン南蛮と新鮮な野菜料理が楽しめる、三宮の人気洋食店。",
     "tabelog": "https://tabelog.com/hyogo/A2801/A280101/28002224/?gclsrc=aw.ds&&cid=yo_g_kw_shop_st02_hyogo-nml_28002224&gad_source=1&gad_campaignid=20045835829&gbraid=0AAAAADO8PFR3fIDDMMNxWXCrx9MVlhpR4&gclid=Cj0KCQjw8ofWBhCHARIsANBj4LvenX4hvG7iq0LsflH2ovn8b6pFODqQBtdpCtkx30YuklzKOoeYXVkaAoDLEALw_wcB",
     "mapsQuery": "港町MOTHER",
-    "warn": "カード可、電子マネー可、QRコード決済可"
+    "payment": "カード可、電子マネー可、QRコード決済可"
   },
   {
     "name": "丸高中華そば 神戸二宮 二宮店",
@@ -593,7 +593,7 @@
     "memo": "濃厚な豚骨醤油スープが特徴の、本場の和歌山ラーメンを神戸で楽しめる人気店。",
     "tabelog": "https://tabelog.com/hyogo/A2801/A280101/28002413/",
     "mapsQuery": "丸高中華そば 神戸二宮 二宮店",
-    "warn": "カード不可、電子マネー不可、QRコード決済不可"
+    "payment": "カード不可、電子マネー不可、QRコード決済不可"
   },
   {
     "name": "燻製kitchen タニグチ",
@@ -607,7 +607,7 @@
     "memo": "香り豊かな燻製料理とウイスキーの組み合わせを、落ち着いた空間で楽しめるお店。",
     "tabelog": "https://tabelog.com/hyogo/A2801/A280101/28060358/",
     "mapsQuery": "燻製kitchen タニグチ",
-    "warn": "カード可(VISA、Master、JCB、AMEX、Diners)　電子マネー不可　QRコード決済可(PayPay)"
+    "payment": "カード可(VISA、Master、JCB、AMEX、Diners)　電子マネー不可　QRコード決済可(PayPay)"
   },
   {
     "name": "神戸元町ハンバーグウエスト",
@@ -621,7 +621,7 @@
     "memo": "肉の旨みをしっかり味わえるジューシーなハンバーグが人気の、神戸元町の洋食店。",
     "tabelog": "https://tabelog.com/hyogo/A2801/A280102/28071070/",
     "mapsQuery": "神戸元町ハンバーグウエスト",
-    "warn": "カード不可、電子マネー不可、QRコード決済可 (PayPay)"
+    "payment": "カード不可、電子マネー不可、QRコード決済可 (PayPay)"
   },
   {
     "name": "四興樓",
@@ -635,7 +635,7 @@
     "memo": "ふっくらとした皮とジューシーな餡が特徴の、神戸名物の豚まんを楽しめる老舗中華料理店。",
     "tabelog": "https://tabelog.com/hyogo/A2801/A280102/28000637/",
     "mapsQuery": "四興樓",
-    "warn": "カード可、電子マネー可、QRコード決済可"
+    "payment": "カード可、電子マネー可、QRコード決済可"
   },
   {
     "name": "濃厚煮干しラーメン 麺屋 弍星 神戸三宮東店",
@@ -649,7 +649,7 @@
     "memo": "煮干しの濃厚な旨味を存分に味わえる、煮干しラーメン専門店。",
     "tabelog": "https://tabelog.com/hyogo/A2801/A280101/28065589/",
     "mapsQuery": "濃厚煮干しラーメン 麺屋 弍星 神戸三宮東店",
-    "warn": "カード不可、電子マネー不可、QRコード決済可(PayPay)"
+    "payment": "カード不可、電子マネー不可、QRコード決済可(PayPay)"
   },
   {
     "name": "おぼや 元町店",
@@ -663,7 +663,7 @@
     "memo": "厳選した黒毛和牛を使った、ボリューム満点の焼肉丼が楽しめるお店。",
     "tabelog": "https://tabelog.com/hyogo/A2801/A280102/28031300/",
     "mapsQuery": "おぼや 元町店",
-    "warn": "カード可(VISA、Master、JCB、AMEX)、電子マネー不可、QRコード決済可(PayPay)"
+    "payment": "カード可(VISA、Master、JCB、AMEX)、電子マネー不可、QRコード決済可(PayPay)"
   },
   {
     "name": "グリル末松",
