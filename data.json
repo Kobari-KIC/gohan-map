@@ -25,7 +25,8 @@
     "memo": "1948年創業、神戸の老舗喫茶。モーニング・トーストが人気。",
     "tabelog": "https://tabelog.com/hyogo/A2801/A280101/28000176/",
     "mapsQuery": "神戸にしむら珈琲店 中山手本店 神戸市中央区",
-    "payment": "カード可（VISA、JCB）、電子マネー可、QRコード決済可"
+    "payment": "カード可（VISA、JCB）、電子マネー可、QRコード決済可",
+    "mapPin": 1
   },
   {
     "name": "TRITON CAFE",
@@ -39,7 +40,8 @@
     "memo": "パンケーキ・デザートが人気の北野の名物カフェ。",
     "tabelog": "https://tabelog.com/hyogo/A2801/A280101/28000714/",
     "mapsQuery": "TRITON CAFE 神戸北野",
-    "payment": "カード可（VISA、Master、JCB、AMEX、Diners）、電子マネー可（交通系ICカード Suica、iD、QUICPay）、QRコード決済可（PayPay、d Barai、Rakuten Pay）"
+    "payment": "カード可（VISA、Master、JCB、AMEX、Diners）、電子マネー可（交通系ICカード Suica、iD、QUICPay）、QRコード決済可（PayPay、d Barai、Rakuten Pay）",
+    "mapPin": 2
   },
   {
     "name": "カフェ フロインドリーブ 本店",
@@ -583,7 +585,8 @@
     "memo": "1998年創業の洋食百名店。名物「サクラライス」（チキンライス×トンカツ×ホワイトソース）。開店前から行列も。",
     "tabelog": "https://tabelog.com/hyogo/A2801/A280101/28000394/",
     "mapsQuery": "グリル末松 神戸市中央区加納町2-1-9",
-    "payment": "カード不可、電子マネー不可、QRコード決済不可"
+    "payment": "カード不可、電子マネー不可、QRコード決済不可",
+    "mapPin": 3
   },
   {
     "name": "のわのわカフェ",
@@ -597,7 +600,8 @@
     "memo": "深夜3時まで営業の深夜カフェ。ふわふわ卵のオムライスが名物。",
     "tabelog": "https://tabelog.com/hyogo/A2801/A280101/28033609/",
     "mapsQuery": "のわのわカフェ 神戸市中央区加納町3-12-13",
-    "payment": "カード不可、電子マネー不可"
+    "payment": "カード不可、電子マネー不可",
+    "mapPin": 4
   },
   {
     "name": "麺蔵 加納町本店",
@@ -611,7 +615,8 @@
     "memo": "1985年創業の老舗。自家製キムチのキムチらーめんが名物、深夜の〆需要も高い。",
     "tabelog": "https://tabelog.com/hyogo/A2801/A280101/28001262/",
     "mapsQuery": "麺蔵 加納町本店 神戸市中央区加納町3-13-1",
-    "payment": "カード可（VISA、Master、JCB、AMEX、Diners）、電子マネー不可"
+    "payment": "カード可（VISA、Master、JCB、AMEX、Diners）、電子マネー不可",
+    "mapPin": 5
   },
   {
     "name": "炭焼酒場いのうえ 神戸北野坂店",
@@ -708,7 +713,8 @@
     "hours": "月・火・水・木・日 10:00〜17:00、金・土 10:00〜17:00/17:00〜23:00(L.O.22:30)／定休日不定（Instagramで要確認）。パン販売は金土のみ売り切れ次第終了",
     "payment": "カード可、電子マネー可、QRコード決済可（PayPay）",
     "tabelog": "https://tabelog.com/hyogo/A2801/A280101/28054318/",
-    "mapsQuery": "THE BAKE 神戸市中央区加納町2-3-12"
+    "mapsQuery": "THE BAKE 神戸市中央区加納町2-3-12",
+    "mapPin": 6
   },
   {
     "name": "満吉食堂",
@@ -721,7 +727,8 @@
     "hours": "11:30〜14:30、17:00〜23:00（営業時間・定休日は変更の可能性あり、来店前に要確認）",
     "payment": "カード不可、電子マネー不可、QRコード決済不可",
     "tabelog": "https://tabelog.com/hyogo/A2801/A280101/28047290/",
-    "mapsQuery": "満吉食堂 神戸市中央区加納町3-10-9"
+    "mapsQuery": "満吉食堂 神戸市中央区加納町3-10-9",
+    "mapPin": 7
   },
   {
     "name": "大黒ラーメン 北野坂店",

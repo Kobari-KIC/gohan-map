@@ -181,6 +181,9 @@ textarea{min-height:56px; resize:vertical;}
     <label>注意メモ（改装休業中など、あれば）
       <input type="text" id="f_warn" />
     </label>
+    <label>地図ピン番号（配布してる地図に対応する番号、無ければ空欄でOK）
+      <input type="number" id="f_mapPin" min="1" step="1" placeholder="例：1" />
+    </label>
     <div class="btnrow">
       <button class="btn primary" id="submitBtn">追加する</button>
       <button class="btn secondary" id="cancelEditBtn" hidden>編集をやめる</button>
@@ -394,7 +397,8 @@ textarea{min-height:56px; resize:vertical;}
       memo: document.getElementById('f_memo'),
       tabelog: document.getElementById('f_tabelog'),
       mapsQuery: document.getElementById('f_mapsQuery'),
-      warn: document.getElementById('f_warn')
+      warn: document.getElementById('f_warn'),
+      mapPin: document.getElementById('f_mapPin')
     };
   }
 
@@ -423,6 +427,7 @@ textarea{min-height:56px; resize:vertical;}
     f.tabelog.value = s.tabelog || '';
     f.mapsQuery.value = s.mapsQuery || '';
     f.warn.value = s.warn || '';
+    f.mapPin.value = s.mapPin || '';
     formTitle.textContent = '②「' + s.name + '」を編集';
     submitBtn.textContent = '更新する';
     cancelEditBtn.hidden = false;
@@ -458,6 +463,7 @@ textarea{min-height:56px; resize:vertical;}
       mapsQuery: f.mapsQuery.value.trim() || (f.name.value.trim() + ' ' + (AREA_LABEL[f.area.value]||''))
     };
     if (f.warn.value.trim()) obj.warn = f.warn.value.trim();
+    if (f.mapPin.value.trim()) obj.mapPin = parseInt(f.mapPin.value.trim(), 10);
 
     var next = currentStores.slice();
     var msg;
