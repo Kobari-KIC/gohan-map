@@ -128,19 +128,6 @@
     "payment": "カード可（VISA、Master、JCB、AMEX、Diners）、電子マネー可（交通系ICカード Suica、Rakuten-Edy、iD、QUICPay）"
   },
   {
-    "name": "松屋 三宮東店",
-    "genre": "牛丼・定食",
-    "category": "丼もの",
-    "type": "chain",
-    "area": "sannomiya",
-    "location": "雲井通5丁目2-18",
-    "price": "500〜1000円程度",
-    "hours": "24時間営業",
-    "memo": "深夜も使える牛めし・定食チェーン。",
-    "tabelog": null,
-    "mapsQuery": "松屋 三宮東店 神戸市中央区"
-  },
-  {
     "name": "餃子の王将 三宮下山手通り店",
     "genre": "中華（餃子）",
     "category": "中華",
