@@ -25,8 +25,7 @@
     "memo": "1948年創業、神戸の老舗喫茶。モーニング・トーストが人気。",
     "tabelog": "https://tabelog.com/hyogo/A2801/A280101/28000176/",
     "mapsQuery": "神戸にしむら珈琲店 中山手本店 神戸市中央区",
-    "payment": "カード可（VISA、JCB）、電子マネー可、QRコード決済可",
-    "mapPin": 1
+    "payment": "カード可（VISA、JCB）、電子マネー可、QRコード決済可"
   },
   {
     "name": "TRITON CAFE",
@@ -742,5 +741,20 @@
     "payment": "カード不可、電子マネー不可、QRコード決済不可",
     "tabelog": "https://tabelog.com/hyogo/A2801/A280101/28071438/",
     "mapsQuery": "pagot 北野店 神戸市中央区加納町2-3-6"
+  },
+  {
+    "name": "神戸にしむら珈琲店 北野坂店",
+    "genre": "喫茶店",
+    "category": "カフェ",
+    "type": "individual",
+    "area": "kitano",
+    "location": "山本通2-1-20／三宮駅から徒歩9分",
+    "price": "1000〜3000円程度",
+    "hours": "1階カフェ 10:00〜22:00(L.O.閉店時)／2階レストラン ランチ11:00〜14:30(L.O.)、ディナー17:00〜20:30(L.O.)／毎月最終月曜定休",
+    "memo": "1階はカフェ、2階はレストラン(要予約)。サンドイッチ・トースト・キッシュ・ケーキなど軽食も。",
+    "tabelog": "https://tabelog.com/hyogo/A2801/A280101/28000175/",
+    "mapsQuery": "神戸にしむら珈琲店 北野坂店 神戸市中央区山本通",
+    "payment": "カード可（VISA、Master、JCB、AMEX、Diners）、電子マネー可、QRコード決済可（PayPay、d払い、楽天ペイ、au PAY）",
+    "mapPin": 1
   }
 ]
